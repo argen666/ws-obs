@@ -88,7 +88,7 @@ def handler(signum, frame):
 
 
 async def connectNats(natsHost):
-    nc = await nats.connect()
+    nc = await nats.connect(natsHost)
     js = nc.jetstream()
     from nats.js.errors import NotFoundError
     try:

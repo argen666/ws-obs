@@ -35,8 +35,8 @@ async def test():
         await asyncio.sleep(3)
 
 
-async def main():
-    nc = await nats.connect()
+async def main(nats_host):
+    nc = await nats.connect(nats_host)
     print(nc)
     js = nc.jetstream()
     sub = await js.subscribe(stream="youtube-stream", subject="comments", durable="printer",
@@ -170,7 +170,7 @@ def merge_images(images, bgcolor="#FFF", width=200):
 
     final_image = np.vstack([np.asarray(i) for i in images])
     final_image = Image.fromarray(final_image)
-    final_image.save(str(time.time()) + 'final_image.png')
+    # final_image.save(str(time.time()) + 'final_image.png')
     return final_image
 
 
@@ -230,9 +230,10 @@ async def shutdown(signal, loop):
 
 
 if __name__ == '__main__':
+    nats_host = sys.argv[1]
     # loop = asyncio.get_event_loop()
     # signals = (signal.SIGTERM, signal.SIGINT)
     # for s in ('SIGINT','SIGTERM'):
     #     loop.add_signal_handler(getattr(signal, s), functools.partial(shutdown, loop))
-    asyncio.run(main())
+    asyncio.run(main(nats_host))
     # asyncio.run(test())

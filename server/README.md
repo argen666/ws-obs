@@ -13,9 +13,9 @@ pip3.9 install -r requirements.txt \
 
 Client (fedora server):
 pip3.9 install -r requirements.txt \
-python3.9 sanik_client.py WS_SERVER_IP STREAM_URL \
+python3.9 sanik_client.py WS_SERVER_IP STREAM_URL 
 
-python3.9 sanik_client.py 192.168.16.51 "https://www.youtube.com/watch?v=IgE-DV-9E55" \
+python3.9 sanik_client.py 192.168.16.51 "https://www.youtube.com/watch?v=IgE-DV-9E55" 
 
 
 cmder...
