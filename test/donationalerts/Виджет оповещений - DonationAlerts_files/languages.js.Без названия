@@ -1,0 +1,2111 @@
+language_strings = {
+	'en_US': {
+		'form_error_value_required': 'This field is required',
+		'form_error_email_only': 'This field must contain a valid email address',
+		'out_of_invoice_tries': 'An error occurred (code -1.1). Please try later.',
+		'last_events_widget_days_ago': {
+			0: '{0} day ago',
+			1: '{0} days ago',
+		},
+		'last_events_widget_hours_ago': {
+			0: '{0} hour ago',
+			1: '{0} hours ago',
+		},
+		'last_events_widget_minutes_ago': {
+			0: '{0} minute ago',
+			1: '{0} minutes ago',
+		},
+		'last_events_widget_seconds_ago': {
+			0: '{0} second ago',
+			1: '{0} seconds ago',
+		},
+		'donation_goal_widget_days_left': {
+			0: '{0} day left',
+			1: '{0} days left',
+		},
+		'donation_goal_widget_hours_left': {
+			0: '{0} hour left',
+			1: '{0} hours left',
+		},
+		'donation_goal_widget_minutes_left': {
+			0: '{0} minute left',
+			1: '{0} minutes left',
+		},
+		'donation_goal_widget_seconds_left': {
+			0: '{0} second left',
+			1: '{0} seconds left',
+		},
+		'last_events_widget_via': 'via {0}',
+		'last_events_widget_for': 'for {0}',
+		'last_events_widget_months_in_a_row': {
+			0: '{0} month in a row',
+			1: '{0} months in a row',
+		},
+		'last_events_gifted_by': '(gifted by {0})',
+		'file_manager_error_exceeded_max_size': 'The size of the uploading file should not exceed {0} Mb!',
+		'file_manager_error_forbidden_extension': 'Only files with JPG, JPEG, GIF, WEBM, PNG, MP3, WAV and OGG extensions are allowed!',
+		'file_manager_delete_file_warning': 'Are you sure you want to delete this file? Please make sure that you don\'t use this file anywhere.',
+		'anonymous': 'Anonymous',
+		'giveaway_cancel_warning': 'Are you sure you want to cancel this giveaway?',
+		'alert_variations_delete_warning': 'Are you sure you want to delete this variation?',
+		'alert_variations_clear_queue': 'Are you sure you want to clear the alert queue of this type?',
+		'payouts_delete_warning': 'Are you sure you want to delete this payout method?',
+		'iss_delete_widget_warning': 'Are you sure you want to delete this widget?',
+		'donation_goals_stop_warning': 'Are you sure you want to stop this goal?',
+		'media_preview_play_seconds': {
+			0: '{0} second',
+			1: '{0} seconds',
+		},
+		'polls_stop_warning': 'Are you sure you want to stop this poll?',
+		'polls_remove_option': 'Remove option',
+		'polls_variant': 'Option {0}:',
+		'polls_variant_title': 'Option title',
+		'donations_delete_warning': 'Are you sure you want to delete this donation?',
+		'alerts_test_message': 'The test alert will display in a few seconds.',
+		'two_factor_hold_seconds': {
+			0: 'second',
+			1: 'seconds',
+		},
+		'connections_disconnect_warning': 'Are you sure you want to disconnect this account?',
+		'reset_token_warning': 'Are you sure you want to reset token? Please note that the links to all widgets will change!',
+		'widget_link_removed': '(link removed)',
+		'donation_goal_widget_goal_over': 'Goal is over!',
+		'alerts_widget_months': {
+			0: '{0} month',
+			1: '{0} months',
+		},
+		'an_error_has_occurred._Please_try_again_in_a_few_minutes': 'An error has occurred. Please try again in a few minutes.',
+		'cookies_warning_text': 'By continuing your visit on our website, we assume your permission to deploy cookies to guarantee a better experience on our site.',
+		'cookies_warning_learn_more': 'Learn more',
+		'cookies_warning_hide': 'Hide',
+
+		'alerts_widget_merchandise_generic': '{0} just bought "{1}" item!',
+		'alerts_widget_merchandise_generic_multiple': {
+			0: '{0} just bought "{1}" item!',
+			1: '{0} just bought {1} "{2}" items!',
+		},
+
+		'lastdonations_widget_merchandise_generic': 'just bought "{0}" item',
+		'lastdonations_widget_merchandise_generic_multiple': {
+			0: 'just bought "{0}" item',
+			1: 'just bought {0} "{1}" items',
+		},
+
+		'lastdonations_widget_merchandise_WARFACE_CASE': 'just bought Warface Case!',
+		'lastdonations_widget_merchandise_WARFACE_CASE_multiple': {
+			0: 'just bought {0} Warface Case!',
+			1: 'just bought {0} Warface Cases!',
+		},
+		'alerts_widget_merchandise_WARFACE_CASE': '{username} just bought Warface Case!',
+		'alerts_widget_merchandise_WARFACE_CASE_multiple': {
+			0: '{username} just bought {0} Warface Case!',
+			1: '{username} just bought {0} Warface Cases!',
+		},
+		'index_chart_subscribers': {
+			0: '{0} subscriber',
+			1: '{0} subscribers',
+		},
+		'clipboard_copy_success': 'Content has been copied to clipboard successfully!',
+		'clipboard_copy_error': 'Couldn\'t copy content to clipboard. Please copy text manually.',
+		'clipboard_copy_error_short': 'Couldn\'t copy content to clipboard',
+		'offer_is_no_longer_available': 'Unfortunately, this promotional offer is no longer available. You can view the list of current advertising offers in the "Available" section.',
+		'offer_is_no_longer_available_short': 'Unfortunately, this promotional offer is no longer available.',
+		'show_embedding_link': 'Show link for embedding',
+		'hide_embedding_link': 'Hide link for embedding',
+		'lastdonations_widget_merchandise_REVELATION_CHEST': 'just bought Revelation Chest!',
+		'lastdonations_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: 'just bought {0} Revelation Chest!',
+			1: 'just bought {0} Revelation Chests!',
+		},
+		'alerts_widget_merchandise_REVELATION_CHEST': '{username} just bought Revelation Chest!',
+		'alerts_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: '{username} just bought {0} Revelation Chest!',
+			1: '{username} just bought {0} Revelation Chests!',
+		},
+
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST': 'just bought ArcheAge Chest!',
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST_multiple': {
+			0: 'just bought {0} ArcheAge Chest!',
+			1: 'just bought {0} ArcheAge Chests!',
+		},
+
+		'lastdonations_widget_merchandise_GOLDEN_STICKER_PACK': 'just bought Golden Sticker Pack!',
+		'lastdonations_widget_merchandise_GOLDEN_STICKER_PACK_multiple': {
+			0: 'just bought {0} Golden Sticker Pack!',
+			1: 'just bought {0} Golden Sticker Packs!',
+		},
+
+		'lastdonations_widget_merchandise_LOSTARK_KEY': 'just bought Lost Ark beta test key!',
+		'lastdonations_widget_merchandise_LOSTARK_KEY_multiple': {
+			0: 'just bought {0} Lost Ark beta test key!',
+			1: 'just bought {0} Lost Ark beta test keys!',
+		},
+
+		'lastdonations_widget_merchandise_LOSTARK_NABOR': 'just bought Lost Ark pack!',
+		'lastdonations_widget_merchandise_LOSTARK_NABOR_multiple': {
+			0: 'just bought {0} Lost Ark pack!',
+			1: 'just bought {0} Lost Ark packs!',
+		},
+
+		'lastdonations_widget_merchandise_LOSTARK_COLLECTION': 'just bought Lost Ark Collector\'s Edition!',
+		'lastdonations_widget_merchandise_LOSTARK_COLLECTION_multiple': {
+			0: 'just bought {0} Lost Ark Collector\'s Edition!',
+			1: 'just bought {0} Lost Ark Collector\'s Editions!',
+		},
+
+		'lastdonations_widget_merchandise_GAME': 'just bought a copy of the game!',
+		'lastdonations_widget_merchandise_GAME_multiple': {
+			0: 'just bought {0} copy of the game!',
+			1: 'just bought {0} copies of the game!',
+		},
+
+		'lastdonations_widget_merchandise_GAME_BIPED': 'just bought a copy of Biped!',
+		'lastdonations_widget_merchandise_GAME_BIPED_multiple': {
+			0: 'just bought {0} copy of Biped!',
+			1: 'just bought {0} copies of Biped!',
+		},
+
+		'lastdonations_widget_merchandise_GAME_WTL': 'just bought a copy of while True: learn()!',
+		'lastdonations_widget_merchandise_GAME_WTL_multiple': {
+			0: 'just bought {0} copy of while True: learn()!',
+			1: 'just bought {0} copies of while True: learn()!',
+		},
+
+		'lastdonations_widget_merchandise_GAME_HIGHLY_LIKELY': 'just bought a copy of Highly Likely!',
+		'lastdonations_widget_merchandise_GAME_HIGHLY_LIKELY_multiple': {
+			0: 'just bought {0} copy of Highly Likely!',
+			1: 'just bought {0} copies of Highly Likely!',
+		},
+
+		'lastdonations_widget_merchandise_GAME_KNOCK_HARDER': 'just bought a copy of Knock Harder!',
+		'lastdonations_widget_merchandise_GAME_KNOCK_HARDER_multiple': {
+			0: 'just bought {0} copy of Knock Harder!',
+			1: 'just bought {0} copies of Knock Harder!',
+		},
+
+		'lastdonations_widget_merchandise_TANK_FORCE_BIG_BATTLE_PACK': 'just bought a copy of Knock Harder!',
+		'lastdonations_widget_merchandise_TANK_FORCE_BIG_BATTLE_PACK_multiple': {
+			0: 'just bought {0} Big Battle Kit!',
+			1: 'just bought {0} Big Battle Kits!',
+		},
+
+		'lastdonations_widget_merchandise_WAR_SELECTION_GERMANY': 'just bought Germany item!',
+		'lastdonations_widget_merchandise_WAR_SELECTION_GERMANY_multiple': {
+			0: 'just bought {0} Germany item!',
+			1: 'just bought {0} Germany items!',
+		},
+
+		'lastdonations_widget_merchandise_BATTLE_ARENA_LEGENDARY_MIGHT': 'just bought Legendary Might item!',
+		'lastdonations_widget_merchandise_BATTLE_ARENA_LEGENDARY_MIGHT_multiple': {
+			0: 'just bought {0} Legendary Might item!',
+			1: 'just bought {0} Legendary Might items!',
+		},
+
+
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LOYANG': 'just got Loyang for 1 day!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LOYANG_multiple': {
+			0: 'just got Loyang for {0} day!',
+			1: 'just got Loyang for {0} days!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_MASSACHUSETTS': 'just got Massachusetts for 1 day!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_MASSACHUSETTS_multiple': {
+			0: 'just got Massachusetts for {0} day!',
+			1: 'just got Massachusetts for {0} days!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_TIRPITZ': 'just got Tirpitz for 1 day!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_TIRPITZ_multiple': {
+			0: 'just got Tirpitz for {0} day!',
+			1: 'just got Tirpitz for {0} days!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LENIN': 'just got Lenin for 1 day!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LENIN_multiple': {
+			0: 'just got Lenin for {0} day!',
+			1: 'just got Lenin for {0} days!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_WICHITA': 'just got Wichita for 1 day!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_WICHITA_multiple': {
+			0: 'just got Wichita for {0} day!',
+			1: 'just got Wichita for {0} days!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_ALABAMA': 'just got Alabama for 1 day!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_ALABAMA_multiple': {
+			0: 'just got Alabama for {0} day!',
+			1: 'just got Alabama for {0} days!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LE_TERRIBLE': 'just got Le Terrible for 1 day!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LE_TERRIBLE_multiple': {
+			0: 'just got Le Terrible for {0} day!',
+			1: 'just got Le Terrible for {0} days!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_BAYARD': 'just got Bayard for 1 day!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_BAYARD_multiple': {
+			0: 'just got Bayard for {0} day!',
+			1: 'just got Bayard for {0} days!',
+		},
+
+
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE': 'just bought Crossfire Case!',
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: 'just bought {0} Crossfire Case!',
+			1: 'just bought {0} Crossfire Cases!',
+		},
+		'alerts_widget_merchandise_CROSSFIRE_CASE': '{username} just bought Crossfire Case!',
+		'alerts_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: '{username} just bought {0} Crossfire Case!',
+			1: '{username} just bought {0} Crossfire Cases!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': 'just bought Conqueror\'s Blade closed testing access!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: 'just bought {0} Conqueror\'s Blade closed testing access!',
+			1: 'just bought {0} Conqueror\'s Blade closed testing accesses!',
+		},
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': '{username} just bought Conqueror\'s Blade closed testing access!',
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: '{username} just bought {0} Conqueror\'s Blade closed testing access!',
+			1: '{username} just bought {0} Conqueror\'s Blade closed testing accesses!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK': 'just bought Conqueror\'s Blade Furious Samurai Pack!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK_multiple': {
+			0: 'just bought {0} Conqueror\'s Blade Furious Samurai Pack!',
+			1: 'just bought {0} Conqueror\'s Blade Furious Samurai Packs!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BEAST_MASTER_PACK': 'just bought Conqueror\'s Blade Beast Master Pack!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BEAST_MASTER_PACK_multiple': {
+			0: 'just bought {0} Conqueror\'s Blade Beast Master Pack!',
+			1: 'just bought {0} Conqueror\'s Blade Beast Master Packs!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET': 'just bought limited edition PUBG item set!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: 'just bought {0} limited edition PUBG item set!',
+			1: 'just bought {0} limited edition PUBG item sets!',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN_SET': '{username} just bought limited edition PUBG item set!',
+		'alerts_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: '{username} just bought {0} limited edition PUBG item set!',
+			1: '{username} just bought {0} limited edition PUBG item sets!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN': 'just bought limited edition PUBG item!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_multiple': {
+			0: 'just bought {0} limited edition PUBG item!',
+			1: 'just bought {0} limited edition PUBG items!',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN': '{username} just bought limited edition PUBG item!',
+		'alerts_widget_merchandise_PUBG_SKIN_multiple': {
+			0: '{username} just bought {0} limited edition PUBG item!',
+			1: '{username} just bought {0} limited edition PUBG items!',
+		},
+
+		'lastdonations_widget_merchandise_LOUDPLAY_1_HOUR': 'just bought 1 hour on Loudplay!',
+		'lastdonations_widget_merchandise_LOUDPLAY_1_HOUR_multiple': {
+			0: 'just bought 1 hour on Loudplay {0} time!',
+			1: 'just bought 1 hour on Loudplay {0} times!',
+		},
+		'alerts_widget_merchandise_LOUDPLAY_1_HOUR': '{username} just bought 1 hour on Loudplay!',
+		'alerts_widget_merchandise_LOUDPLAY_1_HOUR_multiple': {
+			0: '{username} just bought 1 hour on Loudplay {0} time!',
+			1: '{username} just bought 1 hour on Loudplay {0} times!',
+		},
+
+		'lastdonations_widget_merchandise_LOUDPLAY_3_HOUR': 'just bought 3 hours on Loudplay!',
+		'lastdonations_widget_merchandise_LOUDPLAY_3_HOUR_multiple': {
+			0: 'just bought 3 hours on Loudplay {0} time!',
+			1: 'just bought 3 hours on Loudplay {0} times!',
+		},
+		'alerts_widget_merchandise_LOUDPLAY_3_HOUR': '{username} just bought 3 hours on Loudplay!',
+		'alerts_widget_merchandise_LOUDPLAY_3_HOUR_multiple': {
+			0: '{username} just bought 3 hours on Loudplay {0} time!',
+			1: '{username} just bought 3 hours on Loudplay {0} times!',
+		},
+
+		'lastdonations_widget_merchandise_LOUDPLAY_10_HOUR': 'just bought 10 hours on Loudplay!',
+		'lastdonations_widget_merchandise_LOUDPLAY_10_HOUR_multiple': {
+			0: 'just bought 10 hours on Loudplay {0} time!',
+			1: 'just bought 10 hours on Loudplay {0} times!',
+		},
+		'alerts_widget_merchandise_LOUDPLAY_10_HOUR': '{username} just bought 10 hours on Loudplay!',
+		'alerts_widget_merchandise_LOUDPLAY_10_HOUR_multiple': {
+			0: '{username} just bought 10 hours on Loudplay {0} time!',
+			1: '{username} just bought 10 hours on Loudplay {0} times!',
+		},
+
+		'lastdonations_widget_merchandise_LOUDPLAY_25_HOUR': 'just bought 25 hours on Loudplay!',
+		'lastdonations_widget_merchandise_LOUDPLAY_25_HOUR_multiple': {
+			0: 'just bought 25 hours on Loudplay {0} time!',
+			1: 'just bought 25 hours on Loudplay {0} times!',
+		},
+		'alerts_widget_merchandise_LOUDPLAY_25_HOUR': '{username} just bought 25 hours on Loudplay!',
+		'alerts_widget_merchandise_LOUDPLAY_25_HOUR_multiple': {
+			0: '{username} just bought 25 hours on Loudplay {0} time!',
+			1: '{username} just bought 25 hours on Loudplay {0} times!',
+		},
+
+		'lastdonations_widget_merchandise_ALLODS_ONLINE_STRONGBOX': 'just bought Allods Online Strongbox!',
+		'lastdonations_widget_merchandise_ALLODS_ONLINE_STRONGBOX_multiple': {
+			0: 'just bought {0} Allods Online Strongbox!',
+			1: 'just bought {0} Allods Online Strongboxes!',
+		},
+		'alerts_widget_merchandise_ALLODS_ONLINE_STRONGBOX': '{username} just bought Allods Online Strongbox!',
+		'alerts_widget_merchandise_ALLODS_ONLINE_STRONGBOX_multiple': {
+			0: '{username} just bought {0} Allods Online Strongbox!',
+			1: '{username} just bought {0} Allods Online Strongboxes!',
+		},
+
+		'guide_welcome_start': 'Start',
+		'guide_welcome_skip': 'Skip guide',
+		'guide_welcome_next': 'Next',
+		'guide_welcome_complete': 'Complete',
+		'guide_welcome_step_of': 'Step {0} of {1}',
+		'guide_welcome_hello': 'Hello',
+		'guide_welcome_intro': 'Our guide will help you start receiving donations quickly',
+		'guide_welcome_step_1': 'Here you will find the link that your viewers will use to send messages and donations',
+		'guide_welcome_step_2': 'Here it is! Place this link under your stream',
+		'guide_welcome_step_3': 'In this section, you can choose where to withdraw all donations',
+		'guide_welcome_step_4': 'Choose a convenient way to withdraw donations. We will withdraw all donations daily. You can add several payout methods. In this case, donations will be withdrawed in the order of priority',
+		'guide_welcome_step_5': 'The most interesting part. It\'s time to set up donation alerts that your viewers will be seeing',
+		'guide_welcome_step_6': 'Press here to show the link for embedding',
+		'guide_welcome_step_7': 'This is the link with alerts. Embed this link in the software you are going to stream with (for example, OBS). Watch the video to find out the fastest way to do so',
+		'guide_welcome_step_7_video': 'https://www.youtube.com/embed/vPNYTvqJz1M',
+		'guide_welcome_step_8': 'Done! More tutorials you can found here. Good luck!',
+
+		'lastdonations_widget_merchandise_rare_item': 'just got {0}!',
+		'lastdonations_widget_twitch_bits': 'just cheered for {0}!',
+
+		'chosen_stickers_amounts': {
+			0: '{0} sticker chosen',
+			1: '{0} stickers chosen',
+		},
+
+		'your_stickers':  'Your stickers',
+
+		'stickers_test_message': 'The test sticker will display in a few seconds.',
+
+		'stream_categories_other': 'Other',
+		'stream_categories_custom': 'Enter your option',
+        'viewer': {
+            0: 'viewer',
+            1: 'viewers',
+        },
+        'subscription': {
+		    0: 'subscription',
+            1: 'subscriptions'
+        }
+	},
+	'ru_RU': {
+		'form_error_value_required': 'Это поле обязательно для заполнения!',
+		'form_error_email_only': 'Это поле должно содержать корректный e-mail!',
+        'just hosted the channel!': 'только что разместил канал у себя!',
+        'just raided the channel!' : 'только что начал рейдить канал!',
+        'just gifted {0}!' : 'только что подарил {0}!',
+        'just subscribed on Boosty for {0}!' : 'только что подписался на Boosty за {0}!',
+        'just upgraded a gifted subscription!' : 'только что продлил подарочную подписку!',
+		'out_of_invoice_tries': 'Произошла ошибка (код -1.1). Пожалуйста, попробуйте позже.',
+		'last_events_widget_days_ago': {
+			0: '{0} день назад',
+			1: '{0} дня назад',
+			2: '{0} дней назад',
+		},
+		'last_events_widget_hours_ago': {
+			0: '{0} час назад',
+			1: '{0} часа назад',
+			2: '{0} часов назад',
+		},
+		'last_events_widget_minutes_ago': {
+			0: '{0} минуту назад',
+			1: '{0} минуты назад',
+			2: '{0} минут назад',
+		},
+		'last_events_widget_seconds_ago': {
+			0: '{0} секунду назад',
+			1: '{0} секунды назад',
+			2: '{0} секунд назад',
+		},
+		'donation_goal_widget_days_left': {
+			0: 'Остался {0} день',
+			1: 'Осталось {0} дня',
+			2: 'Осталось {0} дней',
+		},
+		'donation_goal_widget_hours_left': {
+			0: 'Остался {0} час',
+			1: 'Осталось {0} часа',
+			2: 'Осталось {0} часов',
+		},
+		'donation_goal_widget_minutes_left': {
+			0: 'Осталась {0} минута',
+			1: 'Осталось {0} минуты',
+			2: 'Осталось {0} минут',
+		},
+		'donation_goal_widget_seconds_left': {
+			0: 'Осталась {0} секунда',
+			1: 'Осталось {0} секунды',
+			2: 'Осталось {0} секунд',
+		},
+		'last_events_widget_via': 'через {0}',
+		'last_events_widget_for': 'за {0}',
+		'last_events_widget_months_in_a_row': {
+			0: '{0} месяц подряд',
+			1: '{0} месяца подряд',
+			2: '{0} месяцев подряд'
+		},
+		'last_events_gifted_by': '(подарил {0})',
+		'file_manager_error_exceeded_max_size': 'Размер загружаемого файла не должен превышать {0} Мб!',
+		'file_manager_error_forbidden_extension': 'Принимаются файлы только с расширениями JPG, JPEG, GIF, WEBM, PNG, MP3, WAV и OGG!',
+		'file_manager_delete_file_warning': 'Вы действительно хотите удалить этот файл? Убедитесь, что этот файл Вами нигде не используется.',
+		'anonymous': 'Аноним',
+		'giveaway_cancel_warning': 'Вы действительно отменить этот розыгрыш?',
+		'alert_variations_delete_warning': 'Вы действительно хотите удалить эту вариацию?',
+		'alert_variations_clear_queue_warning': 'Вы действительно хотите очистить очередь оповещений этого типа?',
+		'an_error_has_occurred._Please_try_again_in_a_few_minutes': 'Произошла ошибка. Пожалуйста, попробуйте через несколько минут.',
+		'payouts_delete_warning': 'Вы действительно хотите удалить этот способ выплат?',
+		'iss_delete_widget_warning': 'Вы действительно хотите удалить этот виджет?',
+		'donation_goals_stop_warning': 'Вы действительно хотите остановить этот сбор?',
+		'media_preview_play_seconds': {
+			0: '{0} секунда',
+			1: '{0} секунды',
+			2: '{0} секунд',
+		},
+		'polls_stop_warning': 'Вы действительно хотите остановить голосование?',
+		'polls_remove_option': 'Удалить вариант',
+		'polls_variant': 'Вариант {0}:',
+		'polls_variant_title': 'Название варианта',
+		'donations_delete_warning': 'Вы действительно хотите удалить это сообщение?',
+		'alerts_test_message': 'Тестовое оповещение отобразится в течение следующих нескольких секунд.',
+		'two_factor_hold_seconds': {
+			0: 'секунду',
+			1: 'секунды',
+			2: 'секунд',
+		},
+		'connections_disconnect_warning': 'Вы действительно хотите отсоединить аккаунт?',
+		'reset_token_warning': 'Вы действительно обновить токен? Обратите внимание, что ссылки на все виджеты изменятся!',
+		'widget_link_removed': '(ссылка удалена)',
+		'donation_goal_widget_goal_over': 'Сбор завершён!',
+		'alerts_widget_months': {
+			0: '{0} месяц',
+			1: '{0} месяца',
+			2: '{0} месяцев'
+		},
+		'cookies_warning_text': 'Продолжая использование нашего сайта, мы подразумеваем Ваше разрешение на использование файлов cookie, чтобы предоставить Вам наилучший опыт использования сайта.',
+		'cookies_warning_learn_more': 'Узнайте подробности',
+		'cookies_warning_hide': 'Скрыть',
+
+		'alerts_widget_merchandise_generic': '{0} купил предмет "{1}"!',
+		'alerts_widget_merchandise_generic_multiple': {
+			0: '{0} купил предмет "{1}"!',
+			1: '{0} купил {1} предмета "{2}"!',
+			2: '{0} купил {1} предметов "{2}"!',
+		},
+
+		'lastdonations_widget_merchandise_generic': 'just bought "{0}" item',
+		'lastdonations_widget_merchandise_generic_multiple': {
+			0: 'купил предмет "{0}"',
+			1: 'купил {0} предмета "{1}"',
+			2: 'купил {0} предметов "{1}"',
+		},
+
+		'lastdonations_widget_merchandise_WARFACE_CASE': 'купил кейс Warface',
+		'lastdonations_widget_merchandise_WARFACE_CASE_multiple': {
+			0: 'купил {0} кейс Warface!',
+			1: 'купил {0} кейса Warface!',
+			2: 'купил {0} кейсов Warface!'
+		},
+		'alerts_widget_merchandise_WARFACE_CASE': '{username} купил кейс Warface!',
+		'alerts_widget_merchandise_WARFACE_CASE_multiple': {
+			0: '{username} купил {0} кейс Warface!',
+			1: '{username} купил {0} кейса Warface!',
+			2: '{username} купил {0} кейсов Warface!',
+		},
+		'index_chart_subscribers': {
+			0: '{0} подписчик',
+			1: '{0} подписчика',
+			2: '{0} подписчиков'
+		},
+		'clipboard_copy_success': 'Контент был успешно скопирован!',
+		'clipboard_copy_error': 'Не удалось скопировать контент. Пожалуйста, скопируйте текст вручную.',
+		'clipboard_copy_error_short': 'Не удалось скопировать контент.',
+		'offer_is_no_longer_available': 'К сожалению, данное рекламное предложение больше недоступно. Список актуальных рекламных предложений вы можете посмотреть в разделе «Доступные»',
+		'offer_is_no_longer_available_short': 'К сожалению, данное рекламное предложение больше недоступно.',
+		'show_embedding_link': 'Показать ссылку для встраивания',
+		'hide_embedding_link': 'Скрыть ссылку для встраивания',
+		'lastdonations_widget_merchandise_REVELATION_CHEST': 'купил сундук Revelation!',
+		'lastdonations_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: 'купил {0} сундук Revelation!',
+			1: 'купил {0} сундука Revelation!',
+			2: 'купил {0} сундуков Revelation!'
+		},
+		'alerts_widget_merchandise_REVELATION_CHEST': '{username} купил сундук Revelation!',
+		'alerts_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: '{username} купил {0} сундук Revelation!',
+			1: '{username} купил {0} сундука Revelation!',
+			2: '{username} купил {0} сундуков Revelation!',
+		},
+
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST': 'купил сундук ArcheAge!',
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST_multiple': {
+			0: 'купил {0} сундук ArcheAge!',
+			1: 'купил {0} сундука ArcheAge!',
+			2: 'купил {0} сундуков ArcheAge!'
+		},
+
+		'lastdonations_widget_merchandise_GOLDEN_STICKER_PACK': 'купил золотой набор стикеров!',
+		'lastdonations_widget_merchandise_GOLDEN_STICKER_PACK_multiple': {
+			0: 'купил {0} золотой набор стикеров!',
+			1: 'купил {0} золотых набора стикеров!',
+			2: 'купил {0} золотых наборов стикеров!'
+		},
+
+		'lastdonations_widget_merchandise_LOSTARK_KEY': 'купил ключ к бета-тестированию Lost Ark!',
+		'lastdonations_widget_merchandise_LOSTARK_KEY_multiple': {
+			0: 'купил {0} ключ к бета-тестированию Lost Ark!',
+			1: 'купил {0} ключа к бета-тестированию Lost Ark!',
+			2: 'купил {0} ключей к бета-тестированию Lost Ark!',
+		},
+
+		'lastdonations_widget_merchandise_LOSTARK_NABOR': 'купил набор Lost Ark!',
+		'lastdonations_widget_merchandise_LOSTARK_NABOR_multiple': {
+			0: 'купил {0} набор Lost Ark!',
+			1: 'купил {0} набора Lost Ark!',
+			2: 'купил {0} наборов Lost Ark!',
+		},
+
+		'lastdonations_widget_merchandise_LOSTARK_COLLECTION': 'купил коллекционное издание Lost Ark!',
+		'lastdonations_widget_merchandise_LOSTARK_COLLECTION_multiple': {
+			0: 'купил {0} коллекционное издание Lost Ark!',
+			1: 'купил {0} коллекционных издания Lost Ark!',
+			2: 'купил {0} коллекционных изданий Lost Ark!',
+		},
+
+		'lastdonations_widget_merchandise_GAME': 'купил копию игры!',
+		'lastdonations_widget_merchandise_GAME_multiple': {
+			0: 'купил {0} копию игры!',
+			1: 'купил {0} копии игры!',
+			2: 'купил {0} копий игры!',
+		},
+
+		'lastdonations_widget_merchandise_GAME_BIPED': 'купил копию Biped!',
+		'lastdonations_widget_merchandise_GAME_BIPED_multiple': {
+			0: 'купил {0} копию Biped!',
+			1: 'купил {0} копии Biped!',
+			2: 'купил {0} копий Biped!',
+		},
+
+		'lastdonations_widget_merchandise_GAME_WTL': 'купил копию while True: learn()!',
+		'lastdonations_widget_merchandise_GAME_WTL_multiple': {
+			0: 'купил {0} копию while True: learn()!',
+			1: 'купил {0} копии while True: learn()!',
+			2: 'купил {0} копий while True: learn()!',
+		},
+
+		'lastdonations_widget_merchandise_GAME_HIGHLY_LIKELY': 'купил копию Highly Likely!',
+		'lastdonations_widget_merchandise_GAME_HIGHLY_LIKELY_multiple': {
+			0: 'купил {0} копию Highly Likely!',
+			1: 'купил {0} копии Highly Likely!',
+			2: 'купил {0} копий Highly Likely!',
+		},
+
+		'lastdonations_widget_merchandise_GAME_KNOCK_HARDER': 'купил копию Knock Harder!',
+		'lastdonations_widget_merchandise_GAME_KNOCK_HARDER_multiple': {
+			0: 'купил {0} копию Knock Harder!',
+			1: 'купил {0} копии Knock Harder!',
+			2: 'купил {0} копий Knock Harder!',
+		},
+
+		'lastdonations_widget_merchandise_TANK_FORCE_BIG_BATTLE_PACK': 'купил предмет Большой боевой набор!',
+		'lastdonations_widget_merchandise_TANK_FORCE_BIG_BATTLE_PACK_multiple': {
+			0: 'купил {0} предмет Большой боевой набор!',
+			1: 'купил {0} предмета Большой боевой набор!',
+			2: 'купил {0} предметов Большой боевой набор!',
+		},
+
+		'lastdonations_widget_merchandise_WAR_SELECTION_GERMANY': 'купил предмет Германия!',
+		'lastdonations_widget_merchandise_WAR_SELECTION_GERMANY_multiple': {
+			0: 'купил {0} предмет Германия!',
+			1: 'купил {0} предмета Германия!',
+			2: 'купил {0} предметов Германия!',
+		},
+
+		'lastdonations_widget_merchandise_BATTLE_ARENA_LEGENDARY_MIGHT': 'купил предмет Легендарная мощь!',
+		'lastdonations_widget_merchandise_BATTLE_ARENA_LEGENDARY_MIGHT_multiple': {
+			0: 'купил {0} предмет Легендарная мощь!',
+			1: 'купил {0} предмета Легендарная мощь!',
+			2: 'купил {0} предметов Легендарная мощь!',
+		},
+
+
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LOYANG': 'получил Loyang на 1 день!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LOYANG_multiple': {
+			0: 'получил Loyang на {0} день!',
+			1: 'получил Loyang на {0} дня!',
+			2: 'получил Loyang на {0} дней!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_MASSACHUSETTS': 'получил Massachusetts на 1 день!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_MASSACHUSETTS_multiple': {
+			0: 'получил Massachusetts на {0} день!',
+			1: 'получил Massachusetts на {0} дня!',
+			2: 'получил Massachusetts на {0} дней!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_TIRPITZ': 'получил Tirpitz на 1 день!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_TIRPITZ_multiple': {
+			0: 'получил Tirpitz на {0} день!',
+			1: 'получил Tirpitz на {0} дня!',
+			2: 'получил Tirpitz на {0} дней!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LENIN': 'получил Lenin на 1 день!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LENIN_multiple': {
+			0: 'получил Lenin на {0} день!',
+			1: 'получил Lenin на {0} дня!',
+			2: 'получил Lenin на {0} дней!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_WICHITA': 'получил Wichita на 1 день!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_WICHITA_multiple': {
+			0: 'получил Wichita на {0} день!',
+			1: 'получил Wichita на {0} дня!',
+			2: 'получил Wichita на {0} дней!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LE_TERRIBLE': 'получил Le Terrible на 1 день!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_LE_TERRIBLE_multiple': {
+			0: 'получил Le Terrible на {0} день!',
+			1: 'получил Le Terrible на {0} дня!',
+			2: 'получил Le Terrible на {0} дней!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_ALABAMA': 'получил Alabama на 1 день!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_ALABAMA_multiple': {
+			0: 'получил Alabama на {0} день!',
+			1: 'получил Alabama на {0} дня!',
+			2: 'получил Alabama на {0} дней!',
+		},
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_BAYARD': 'получил Bayard на 1 день!',
+		'lastdonations_widget_merchandise_WARSHIPS_KORABL_BAYARD_multiple': {
+			0: 'получил Bayard на {0} день!',
+			1: 'получил Bayard на {0} дня!',
+			2: 'получил Bayard на {0} дней!',
+		},
+
+
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE': 'купил кейс Crossfire!',
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: 'купил {0} кейс Crossfire!',
+			1: 'купил {0} кейса Crossfire!',
+			2: 'купил {0} кейсов Crossfire!'
+		},
+		'alerts_widget_merchandise_CROSSFIRE_CASE': '{username} купил кейс Crossfire!',
+		'alerts_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: '{username} купил {0} кейс Crossfire!',
+			1: '{username} купил {0} кейса Crossfire!',
+			2: '{username} купил {0} кейсов Crossfire!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': 'купил доступ к закрытому тестированию Conqueror\'s Blade!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: 'купил {0} доступ к закрытому тестированию Conqueror\'s Blade!',
+			1: 'купил {0} доступа к закрытому тестированию Conqueror\'s Blade!',
+			2: 'купил {0} доступов к закрытому тестированию Conqueror\'s Blade!'
+		},
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': '{username} купил доступ к закрытому тестированию Conqueror\'s Blade!',
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: '{username} купил {0} доступ к закрытому тестированию Conqueror\'s Blade!',
+			1: '{username} купил {0} доступа к закрытому тестированию Conqueror\'s Blade!',
+			2: '{username} купил {0} доступов к закрытому тестированию Conqueror\'s Blade!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET': 'купил лимитированный набор предметов PUBG!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: 'купил {0} лимитированный набор предметов PUBG!',
+			1: 'купил {0} лимитированных набора предметов PUBG!',
+			2: 'купил {0} лимитированных наборов предметов PUBG!'
+		},
+		'alerts_widget_merchandise_PUBG_SKIN_SET': '{username} купил лимитированный набор предметов PUBG!',
+		'alerts_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: '{username} купил {0} лимитированный набор предметов PUBG!',
+			1: '{username} купил {0} лимитированных набора предметов PUBG!',
+			2: '{username} купил {0} лимитированных наборов предметов PUBG!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN': 'купил лимитированный предмет PUBG!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_multiple': {
+			0: 'купил {0} лимитированный предмет PUBG!',
+			1: 'купил {0} лимитированных предмета PUBG!',
+			2: 'купил {0} лимитированных предметов PUBG!'
+		},
+		'alerts_widget_merchandise_PUBG_SKIN': '{username} купил лимитированный предмет PUBG!',
+		'alerts_widget_merchandise_PUBG_SKIN_multiple': {
+			0: '{username} купил {0} лимитированный предмет PUBG!',
+			1: '{username} купил {0} лимитированных предмета PUBG!',
+			2: '{username} купил {0} лимитированных предметов PUBG!',
+		},
+
+		'lastdonations_widget_merchandise_LOUDPLAY_1_HOUR': 'купил 1 час на Loudplay!',
+		'lastdonations_widget_merchandise_LOUDPLAY_1_HOUR_multiple': {
+			0: 'купил 1 час на Loudplay {0} раз!',
+			1: 'купил 1 час на Loudplay {0} раза!',
+			2: 'купил 1 час на Loudplay {0} раз!'
+		},
+		'alerts_widget_merchandise_LOUDPLAY_1_HOUR': '{username} купил 1 час на Loudplay!',
+		'alerts_widget_merchandise_LOUDPLAY_1_HOUR_multiple': {
+			0: '{username} 1 час на Loudplay {0} раз!',
+			1: '{username} 1 час на Loudplay {0} раза!',
+			2: '{username} 1 час на Loudplay {0} раз!',
+		},
+		'lastdonations_widget_merchandise_LOUDPLAY_3_HOUR': 'купил 3 часа на Loudplay!',
+		'lastdonations_widget_merchandise_LOUDPLAY_3_HOUR_multiple': {
+			0: 'купил 3 часа на Loudplay {0} раз!',
+			1: 'купил 3 часа на Loudplay {0} раза!',
+			2: 'купил 3 часа на Loudplay {0} раз!'
+		},
+		'alerts_widget_merchandise_LOUDPLAY_3_HOUR': '{username} купил 3 часа на Loudplay!',
+		'alerts_widget_merchandise_LOUDPLAY_3_HOUR_multiple': {
+			0: '{username} 3 часа на Loudplay {0} раз!',
+			1: '{username} 3 часа на Loudplay {0} раза!',
+			2: '{username} 3 часа на Loudplay {0} раз!',
+		},
+		'lastdonations_widget_merchandise_LOUDPLAY_10_HOUR': 'купил 10 часов на Loudplay!',
+		'lastdonations_widget_merchandise_LOUDPLAY_10_HOUR_multiple': {
+			0: 'купил 10 часов на Loudplay {0} раз!',
+			1: 'купил 10 часов на Loudplay {0} раза!',
+			2: 'купил 10 часов на Loudplay {0} раз!'
+		},
+		'alerts_widget_merchandise_LOUDPLAY_10_HOUR': '{username} купил 10 часов на Loudplay!',
+		'alerts_widget_merchandise_LOUDPLAY_10_HOUR_multiple': {
+			0: '{username} 10 часов на Loudplay {0} раз!',
+			1: '{username} 10 часов на Loudplay {0} раза!',
+			2: '{username} 10 часов на Loudplay {0} раз!',
+		},
+		'lastdonations_widget_merchandise_LOUDPLAY_25_HOUR': 'купил 25 часов на Loudplay!',
+		'lastdonations_widget_merchandise_LOUDPLAY_25_HOUR_multiple': {
+			0: 'купил 25 часов на Loudplay {0} раз!',
+			1: 'купил 25 часов на Loudplay {0} раза!',
+			2: 'купил 25 часов на Loudplay {0} раз!'
+		},
+		'alerts_widget_merchandise_LOUDPLAY_25_HOUR': '{username} купил 25 часов на Loudplay!',
+		'alerts_widget_merchandise_LOUDPLAY_25_HOUR_multiple': {
+			0: '{username} 25 часов на Loudplay {0} раз!',
+			1: '{username} 25 часов на Loudplay {0} раза!',
+			2: '{username} 25 часов на Loudplay {0} раз!',
+		},
+		'lastdonations_widget_merchandise_ALLODS_ONLINE_STRONGBOX': 'купил ларец Аллодов Онлайн!',
+		'lastdonations_widget_merchandise_ALLODS_ONLINE_STRONGBOX_multiple': {
+			0: 'купил {0} ларец Аллодов Онлайн!',
+			1: 'купил {0} ларца Аллодов Онлайн!',
+			2: 'купил {0} ларцов Аллодов Онлайн!'
+		},
+		'alerts_widget_merchandise_ALLODS_ONLINE_STRONGBOX': '{username} купил ларец Аллодов Онлайн!',
+		'alerts_widget_merchandise_ALLODS_ONLINE_STRONGBOX_multiple': {
+			0: '{username} купил {0} ларец Аллодов Онлайн!',
+			1: '{username} купил {0} ларца Аллодов Онлайн!',
+			2: '{username} купил {0} ларцов Аллодов Онлайн!',
+		},
+		
+		'guide_welcome_start': 'Начать',
+		'guide_welcome_skip': 'Завершить',
+		'guide_welcome_next': 'Далее',
+		'guide_welcome_complete': 'Завершить',
+		'guide_welcome_step_of': 'Шаг {0} из {1}',
+		'guide_welcome_hello': 'Добро пожаловать',
+		'guide_welcome_intro': 'Сейчас мы расскажем как начать принимать донаты на стриме',
+		'guide_welcome_step_1': 'В этом разделе вы найдете ссылку, с помощью которой зрители будут отправлять вам сообщения и донаты',
+		'guide_welcome_step_2': 'Вот она! Разместите эту ссылку под своим стримом',
+		'guide_welcome_step_3': 'В этом разделе можно выбрать куда выводить все донаты',
+		'guide_welcome_step_4': 'Выберите удобный для вас способ вывода. Если их несколько, тогда мы будем выводить донаты в порядке приоритета. Кстати, делаем мы это ежедневно',
+		'guide_welcome_step_5': 'Впереди самое интересное! Пора настроить оповещения о донатах, которые увидят зрители',
+		'guide_welcome_step_6': 'Нажмите, чтобы показать ссылку для интеграции',
+		'guide_welcome_step_7': 'Скопируйте эту ссылку и вставьте в OBS или другую программу для стриминга. Посмотрите видео, чтобы узнать самый быстрый способ как это сделать',
+		'guide_welcome_step_7_video': 'https://www.youtube.com/embed/o4scZa99gJc',
+		'guide_welcome_step_8': 'Готово! Нужно больше гайдов? Их можно найти тут. Удачного эфира!',
+		'lastdonations_widget_merchandise_rare_item': 'только что получил {0}!',
+		'lastdonations_widget_twitch_bits': 'отправил {0}!',
+
+		'chosen_stickers_amounts': {
+			0: 'Выбран {0} стикер',
+			1: 'Выбрано {0} стикера',
+			2: 'Выбрано {0} стикеров',
+		},
+
+		'your_stickers': 'Ваши стикеры',
+
+		'stickers_test_message': 'Тестовый стикер отобразится в течение следующих нескольких секунд.',
+
+		'stream_categories_other': 'Другое',
+		'stream_categories_custom': 'Введите свой вариант',
+		'The Witcher': 'Ведьмак',
+		'Gwent': 'ГВИНТ',
+		'Games': 'Игры',
+		'IRL': 'IRL',
+		'Films and Animation': 'Фильмы и анимация',
+		'Cars': 'Авто',
+		'Property and Real Estate': 'Недвижимость',
+		'Design and Repair': 'Дизайн и ремонт',
+		'Music and Podcasts': 'Музыка и подкасты',
+		'Animals': 'Животные',
+		'Sport': 'Спорт',
+		'Esport and Cybersport': 'Киберспорт',
+		'Travels': 'Путешествия',
+		'People and Blogs': 'Люди и блоги',
+		'Humor': 'Юмор',
+		'Entertainment': 'Развлечения',
+		'Beauty and Fitness': 'Красота и фитнес',
+		'Medicine and Health': 'Медицина и здоровье',
+		'Fashion and Style': 'Мода и стиль',
+		'News and Politics': 'Новости и политика',
+		'Casino and Betting': 'Казино и ставки',
+		'Education and Science': 'Образование и Наука',
+		'Technology': 'Техника',
+		'Social work': 'Общественная деятельность',
+		'Moms and Dads': 'Для мам и пап',
+		'For Children and Teenagers': 'Для детей и подростков',
+		'Business': 'Бизнес',
+		'Trading and Finances': 'Финансы и трейдинг',
+		'Culture and Аrt': 'Культура и искусство',
+		'Hobby and Creative': 'Хобби и творчество',
+        'viewer': {
+            0: 'зрителем',
+            1: 'зрителями',
+            2: 'зрителей',
+        },
+        'subscription': {
+            0: 'подписку',
+            1: 'подписки',
+            2: 'подписок'
+        }
+	},
+    'fr_FR': {
+        'out_of_invoice_tries': 'Une erreur s\'est produite (code -1.1) Veuillez réessayer plus tard',
+        'last_events_widget_days_ago': {
+            0: 'Il y a {0} jour',
+            1: 'Il y a {0} jours',
+        },
+        'last_events_widget_hours_ago': {
+            0: 'Il y a {0} heure',
+            1: 'Il y a {0} heures',
+        },
+        'last_events_widget_minutes_ago': {
+            0: 'Il y a {0} minute',
+            1: 'Il y a {0} minutes',
+        },
+        'last_events_widget_seconds_ago': {
+            0: 'Il y a {0} seconde',
+            1: 'Il y a {0} secondes',
+        },
+        'donation_goal_widget_days_left': {
+            0: 'il reste {0} jour',
+            1: 'il reste {0} jours',
+        },
+        'donation_goal_widget_hours_left': {
+            0: 'il reste {0} heure',
+            1: 'il reste {0} heures',
+        },
+        'donation_goal_widget_minutes_left': {
+            0: 'il reste {0} minute',
+            1: 'il reste {0} minutes',
+        },
+        'donation_goal_widget_seconds_left': {
+            0: '{0} second left',
+            1: '{0} seconds left',
+        },
+        'last_events_widget_via': 'via {0}',
+        'last_events_widget_for': 'for {0}',
+        'last_events_widget_months_in_a_row': {
+            0: 'le {0} mois de suite',
+            1: 'le {0} mois de suite',
+        },
+        'file_manager_error_exceeded_max_size': 'La taille du téléchargement ne devrait pas dépasser {0} Mb!',
+        'file_manager_error_forbidden_extension': 'Seuls les fichiers ayant l\'extension JPG, JPEG, GIF, WEBM, PNG, MP3, WAV et OGG sont permis!',
+        'file_manager_delete_file_warning': 'Êtes-vous certain(e) de vouloir supprimer ce fichier? Veuillez vous assurer que vous n\'utilisez pas ce fichier quelque part',
+        'anonymous': 'Anonyme',
+        'giveaway_cancel_warning': 'Êtes-vous certain(e) de vouloir annuler ce giveaway',
+        'alert_variations_delete_warning': 'Êtes-vous certain(e) de vouloir supprimer cette variation?',
+        'alert_variations_clear_queue': 'Êtes-vous certain(e) de vouloir effacer cette file d\'attente d\'alarme de ce type?',
+        'payouts_delete_warning': 'Êtes-vous certain(e) de vouloir effacer ce mode de paiement?',
+        'iss_delete_widget_warning': 'Êtes-vous certain(e) de vouloir effacer ce widget?',
+        'donation_goals_stop_warning': 'Êtes-vous certain(e) de vouloir arrêter cet objectif?',
+        'media_preview_play_seconds': {
+            0: '{0} seconde',
+            1: '{0} secondes',
+        },
+        'polls_stop_warning': 'Êtes-vous certain(e) de vouloir arrêter ce sondage?',
+        'polls_remove_option': 'Supprimer l’option',
+        'polls_variant': 'L’option {0}:',
+        'polls_variant_title': 'L’option titre',
+        'donations_delete_warning': 'Êtes-vous certain(e) de vouloir annuler ce don?',
+        'alerts_test_message': 'Le test d’alerte affichera dans quelques secondes.',
+        'two_factor_hold_seconds': {
+            0: 'seconde',
+            1: 'secondes',
+        },
+        'connections_disconnect_warning': 'Êtes-vous certain(e) de vouloir déconnecter ce compte?',
+        'reset_token_warning': 'Êtes-vous certain(e) de vouloir réinitialiser ce token? Veuillez noter que le liens aux widgets changera!',
+        'widget_link_removed': '(le lien retiré)',
+        'donation_goal_widget_goal_over': 'L’objectif est terminé!',
+        'alerts_widget_months': {
+            0: '{0} mois',
+            1: '{0} mois',
+        },
+        'cookies_warning_text': 'En poursuivant votre visite de notre site vous acceptez notre déploiment des cookies pour garantir une meilleure expérience d’utilisation de celui.',
+        'cookies_warning_learn_more': 'En savoir plus',
+        'cookies_warning_hide': 'Cacher',
+		'last_events_gifted_by': '(offert par {0})',
+		'lastdonations_widget_merchandise_WARFACE_CASE': 'vient d’acheter l’étui Warface !',
+		'lastdonations_widget_merchandise_WARFACE_CASE_multiple': {
+			0: 'vient d’acheter {0} étui Warface !',
+			1: 'vient d’acheter {0} étuis Warface !',
+		},
+		'alerts_widget_merchandise_WARFACE_CASE': '{username} vient d’acheter l’étui Warface !',
+		'alerts_widget_merchandise_WARFACE_CASE_multiple': {
+			0: '{username} vient d’acheter {0} étui Warface !',
+			1: '{username} vient d’acheter {0} étuis Warface !',
+		},
+		'index_chart_subscribers': {
+			0: '{0} abonné',
+			1: '{0} abonnés',
+		},
+		'clipboard_copy_success': 'Le contenu a été copié avec succès dans le presse-papiers !',
+		'clipboard_copy_error': 'Impossible de copier le contenu dans le presse-papiers. Veuillez copier le texte manuellement.',
+		'clipboard_copy_error_short': 'Impossible de copier le contenu dans le presse-papiers',
+		'show_embedding_link': 'Afficher lien pour incorporation',
+		'hide_embedding_link': 'Cacher lien pour incorporation',
+		'lastdonations_widget_merchandise_REVELATION_CHEST': 'vient d’acheter le coffre de présentation !',
+		'lastdonations_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: 'vient d’acheter {0} coffre de présentation !',
+			1: 'vient d’acheter {0} coffres de présentation !',
+		},
+		'alerts_widget_merchandise_REVELATION_CHEST': '{username} vient d’acheter le coffre de présentation !',
+		'alerts_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: '{username} vient d’acheter {0} coffre de présentation !',
+			1: '{username} vient d’acheter {0} coffres de présentation !',
+		},
+
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST': 'vient d’acheter le coffre ArcheAge !',
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST_multiple': {
+			0: 'vient d’acheter {0} coffre ArcheAge !',
+			1: 'vient d’acheter {0} coffres ArcheAge !',
+		},
+
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE': 'vient d’acheter l’étui Crossfire !',
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: 'vient d’acheter {0} étui Crossfire !',
+			1: 'vient d’acheter {0} étuis Crossfire !',
+		},
+		'alerts_widget_merchandise_CROSSFIRE_CASE': '{username} vient d’acheter l’étui Crossfire !',
+		'alerts_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: '{username} vient d’acheter {0} étui Crossfire !',
+			1: '{username} vient d’acheter {0} étuis Crossfire !',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': 'vient d’acheter l’accès à la bêta fermée de Conqueror’s Blade !',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: 'vient d’acheter {0} accès à la bêta fermée de Conqueror’s Blade !',
+			1: 'vient d’acheter {0} accès à la bêta fermée de Conqueror’s Blade !',
+		},
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': '{username} vient d’acheter l’accès à la bêta fermée de Conqueror’s Blade !',
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: '{username} vient d’acheter {0} accès à la bêta fermée de Conqueror’s Blade !',
+			1: '{username} vient d’acheter {0} accès à la bêta fermée de Conqueror’s Blade !',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK': 'vient d’acheter le pack Samouraï Furieux de Conqueror’s Blade !',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK_multiple': {
+			0: 'vient d’acheter {0} pack Samouraï Furieux de Conqueror’s Blade !',
+			1: 'vient d’acheter {0} packs Samouraï Furieux de Conqueror’s Blade !',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET': 'vient d’acheter le pack d’articles en édition limitée de PUBG !',
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: 'vient d’acheter {0} pack d’articles en édition limitée de PUBG !',
+			1: 'vient d’acheter {0} packs d’articles en édition limitée de PUBG !',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN_SET': '{username} vient d’acheter le pack d’articles en édition limitée de PUBG !',
+		'alerts_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: '{username} vient d’acheter {0} pack d’articles en édition limitée de PUBG !',
+			1: '{username} vient d’acheter {0} packs d’articles en édition limitée de PUBG !',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN': 'vient d’acheter l’article en édition limitée de PUBG !',
+		'lastdonations_widget_merchandise_PUBG_SKIN_multiple': {
+			0: 'vient d’acheter {0} article en édition limitée de PUBG !',
+			1: 'vient d’acheter {0} articles en édition limitée de PUBG !',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN': '{username} vient d’acheter l’article en édition limitée de PUBG !',
+		'alerts_widget_merchandise_PUBG_SKIN_multiple': {
+			0: '{username} vient d’acheter {0} article en édition limitée de PUBG !',
+			1: '{username} vient d’acheter {0} articles en édition limitée de PUBG !',
+		},
+
+		'lastdonations_widget_merchandise_rare_item': 'vient de recevoir {0} !',
+		'lastdonations_widget_twitch_bits': 'vient d’envoyer des Cheers pour {0} !'
+    },
+    'pt_BR': {
+        'out_of_invoice_tries': 'Ocorreu um erro (código -1.1). Por favor, tente novamente mais tarde.',
+        'last_events_widget_days_ago': {
+            0: '{0} dia atrás',
+            1: '{0} dias atrás',
+        },
+        'last_events_widget_hours_ago': {
+            0: '{0} hora atrás',
+            1: '{0} horas atrás',
+        },
+        'last_events_widget_minutes_ago': {
+            0: '{0} minuto atrás',
+            1: '{0} minutos atrás',
+        },
+        'last_events_widget_seconds_ago': {
+            0: '{0} segundo atrás',
+            1: '{0} segundos atrás',
+        },
+        'donation_goal_widget_days_left': {
+            0: '{0} dia restante',
+            1: '{0} dias restantes',
+        },
+        'donation_goal_widget_hours_left': {
+            0: '{0} hora restante',
+            1: '{0} horas restantes',
+        },
+        'donation_goal_widget_minutes_left': {
+            0: '{0} minuto restante',
+            1: '{0} minutos restantes',
+        },
+        'donation_goal_widget_seconds_left': {
+            0: '{0} segundo restante',
+            1: '{0} segundos restantes',
+        },
+        'last_events_widget_via': 'através de {0}',
+        'last_events_widget_for': 'para {0}',
+        'last_events_widget_months_in_a_row': {
+            0: '{0} mês consecutivo',
+            1: '{0} meses consecutivos',
+        },
+        'file_manager_error_exceeded_max_size': 'O tamanho arquivo a ser carregado não deve exceder {0} Mb!',
+        'file_manager_error_forbidden_extension': 'Apenas arquivos com extensões JPG, JPEG, GIF, WEBM, PNG, MP3, WAV e OGG são permitidos!',
+        'file_manager_delete_file_warning': 'Tem certeza que deseja excluir este arquivo? Por favor, certifique-se de não usar este arquivo em nenhum outro lugar.',
+        'anonymous': 'Anônimo',
+        'giveaway_cancel_warning': 'Tem certeza que deseja cancelar esta premiação?',
+        'alert_variations_delete_warning': 'Tem certeza que deseja excluir esta variação?',
+        'alert_variations_clear_queue': 'Tem certeza que deseja remover a pila de alerta deste tipo?',
+        'payouts_delete_warning': 'Tem certeza que deseja excluir esta método de depósito?',
+        'iss_delete_widget_warning': 'Tem certeza que deseja excluir este widget?',
+        'donation_goals_stop_warning': 'Tem certeza que deseja parar esta meta?',
+        'media_preview_play_seconds': {
+            0: '{0} segundo',
+            1: '{0} segundos',
+        },
+        'polls_stop_warning': 'Tem certeza que deseja parar esta enquete?',
+        'polls_remove_option': 'Remover opção',
+        'polls_variant': 'Opção {0}:',
+        'polls_variant_title': 'Título da opção',
+        'donations_delete_warning': 'Tem certeza que deseja excluir esta doação?',
+        'alerts_test_message': 'O alerta de teste será exibido em alguns segundos.',
+        'two_factor_hold_seconds': {
+            0: 'segundo',
+            1: 'segundos',
+        },
+        'connections_disconnect_warning': 'Tem certeza que deseja desconectar esta conta?',
+        'reset_token_warning': 'Tem certeza que deseja redefinir esta token? Esteja ciente de que os links para o widget mudarão!',
+        'widget_link_removed': '(link removido)',
+        'donation_goal_widget_goal_over': 'A meta foi encerrada!',
+        'alerts_widget_months': {
+            0: '{0} mês',
+            1: '{0} meses',
+        },
+        'cookies_warning_text': 'Ao continuar sua visita a nosso site, assumimos que você permite o uso de cookies para garantir uma melhor experiência de navegação.',
+        'cookies_warning_learn_more': 'Saiba mais',
+        'cookies_warning_hide': 'Ocultar',
+        'lastdonations_widget_merchandise_warface': {
+            0: 'acabou de comprar {0} Maleta Warface!',
+            1: 'acabou de comprar {0} Maletas Warface!',
+        },
+        'alerts_widget_merchandise_warface': '{username} acabou de comprar a Maleta Warface!',
+        'alerts_widget_merchandise_warface_multiple': {
+            0: '{username} acabou de comprar a {0} Maleta Warface!',
+            1: '{username} acabou de comprar {0} Maletas Warface!',
+        },
+		'last_events_gifted_by': '(presenteado por {0})',
+		'lastdonations_widget_merchandise_WARFACE_CASE': 'acabou de comprar a Maleta Warface',
+		'lastdonations_widget_merchandise_WARFACE_CASE_multiple': {
+			0: 'acabou de comprar {0} Maleta Warface!',
+			1: 'acabou de comprar {0} Maletas Warface!',
+		},
+		'alerts_widget_merchandise_WARFACE_CASE': '{username} acabou de comprar a Maleta Warface!',
+		'alerts_widget_merchandise_WARFACE_CASE_multiple': {
+			0: '{username} acabou de comprar a {0} Maleta Warface!',
+			1: '{username} acabou de comprar {0} Maletas Warface!',
+		},
+		'index_chart_subscribers': {
+			0: '{0} assinante',
+			1: '{0} assinantes',
+		},
+		'clipboard_copy_success': 'O conteúdo foi copiado para a área de transferência com sucesso!',
+		'clipboard_copy_error': 'Não foi possível copiar o conteúdo para a área de transferência. Por favor, copie o texto manualmente.',
+		'clipboard_copy_error_short': 'Não foi possível copiar o conteúdo para a área de transferência',
+		'show_embedding_link': 'Exibir link por incorporação',
+		'hide_embedding_link': 'Ocultar link por incorporação',
+		'lastdonations_widget_merchandise_REVELATION_CHEST': 'acabou de comprar o Baú do Revelation!',
+		'lastdonations_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: 'acabou de comprar {0} Baú do Revelation!',
+			1: 'acabou de comprar {0} Baús do Revelation!',
+		},
+		'alerts_widget_merchandise_REVELATION_CHEST': '{username} acabou de comprar o Baú do Revelation!',
+		'alerts_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: '{username} acabou de comprar {0} Baú do Revelation!',
+			1: '{username} acabou de comprar {0} Baús do Revelation!',
+		},
+
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST': 'acabou de comprar o Baú do ArcheAge!',
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST_multiple': {
+			0: 'acabou de comprar {0} Baú do ArcheAge!',
+			1: 'acabou de comprar {0} Baús do ArcheAge!',
+		},
+
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE': 'acabou de comprar a Maleta do Crossfire!',
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: 'acabou de comprar {0} Maleta do Crossfire!',
+			1: 'acabou de comprar {0} Maletas do Crossfire!',
+		},
+		'alerts_widget_merchandise_CROSSFIRE_CASE': '{username} acabou de comprar a Maleta do Crossfire!',
+		'alerts_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: '{username} acabou de comprar {0} Maleta do Crossfire!',
+			1: '{username} acabou de comprar {0} Maletas do Crossfire!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': 'acabou de comprar o acesso ao teste fechado do Conqueror\'s Blade!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: 'acabou de comprar {0} acesso ao teste fechado do Conqueror\'s Blade!',
+			1: 'acabou de comprar {0} acessos ao teste fechado do Conqueror\'s Blade!',
+		},
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': '{username} acabou de comprar o acesso ao teste fechado do Conqueror\'s Blade!',
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: '{username} acabou de comprar {0} acesso ao teste fechado do Conqueror\'s Blade!',
+			1: '{username} acabou de comprar {0} acessos ao teste fechado do Conqueror\'s Blade!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK': 'acabou de comprar o Pacote do Samurai Furioso do Conqueror\'s Blade!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK_multiple': {
+			0: 'acabou de comprar {0} Pacote do Samurai Furioso do Conqueror\'s Blade!',
+			1: 'acabou de comprar {0} Pacote do Samurai Furioso do Conqueror\'s Blade!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET': 'acabou de comprar um conjunto de itens de edição limitada do PUBG!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: 'acabou de comprar {0} conjunto de itens de edição limitada do PUBG!',
+			1: 'acabou de comprar {0} conjuntos de itens de edição limitada do PUBG!',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN_SET': '{username} acabou de comprar um conjunto de itens de edição limitada do PUBG!',
+		'alerts_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: '{username} acabou de comprar {0} conjunto de itens de edição limitada do PUBG!',
+			1: '{username} acabou de comprar {0} conjuntos de itens de edição limitada do PUBG!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN': 'acabou de comprar um item de edição limitada do PUBG!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_multiple': {
+			0: 'acabou de comprar {0} item de edição limitada do PUBG!',
+			1: 'acabou de comprar {0} itens de edição limitada do PUBG!',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN': '{username} acabou de comprar um item de edição limitada do PUBG!',
+		'alerts_widget_merchandise_PUBG_SKIN_multiple': {
+			0: '{username} acabou de comprar {0} item de edição limitada do PUBG!',
+			1: '{username} acabou de comprar {0} itens de edição limitada do PUBG!',
+		},
+
+		'lastdonations_widget_merchandise_rare_item': 'acabou de obter {0}!',
+		'lastdonations_widget_twitch_bits': 'acabou de torcer por {0}!'
+    },
+    'de_DE': {
+        'out_of_invoice_tries': 'Ein Fehler ist aufgetreten (Code -1.1). Bitte versuchen Sie es später noch einmal.',
+        'last_events_widget_days_ago': {
+            0: 'Vor {0} Tag',
+            1: 'Vor {0} Tagen',
+        },
+        'last_events_widget_hours_ago': {
+            0: 'Vor {0} Stunde',
+            1: 'Vor {0} Stunden',
+        },
+        'last_events_widget_minutes_ago': {
+            0: 'Vor {0} Minute',
+            1: 'Vor {0} Minuten',
+        },
+        'last_events_widget_seconds_ago': {
+            0: 'Vor {0} Sekunde',
+            1: 'Vor {0} Sekunden',
+        },
+        'donation_goal_widget_days_left': {
+            0: 'Noch {0} Tag',
+            1: 'Noch {0} Tage',
+        },
+        'donation_goal_widget_hours_left': {
+            0: 'Noch {0} Stunde',
+            1: 'Noch {0} Stunden',
+        },
+        'donation_goal_widget_minutes_left': {
+            0: 'Noch {0} Minute',
+            1: 'Noch {0} Minuten',
+        },
+        'donation_goal_widget_seconds_left': {
+            0: 'Noch {0} Sekunde',
+            1: 'Noch {0} Sekunden',
+        },
+        'last_events_widget_via': 'über {0}',
+        'last_events_widget_for': 'für {0}',
+        'last_events_widget_months_in_a_row': {
+            0: '{0} Monat am Stück',
+            1: '{0} Monate am Stück',
+        },
+        'file_manager_error_exceeded_max_size': 'Die hochzuladende Datei sollte nicht größer sein als {0} MB!',
+        'file_manager_error_forbidden_extension': 'Nur Dateien mit den Endungen JPG, JPEG, GIF, WEBM, PNG, MP3, WAV und OGG sind zulässig!',
+        'file_manager_delete_file_warning': 'Möchten Sie diese Datei wirklich löschen? Bitte achten Sie darauf, diese Datei nirgends zu verwenden.',
+        'anonymous': 'Anonym',
+        'giveaway_cancel_warning': 'Möchten Sie dieses Giveaway wirklich stornieren?',
+        'alert_variations_delete_warning': 'Möchten Sie diese Variation wirklich löschen?',
+        'alert_variations_clear_queue': 'Möchten Sie die Benachrichtigungswarteschlange dieses Typs wirklich leeren?',
+        'payouts_delete_warning': 'Möchten Sie diese Auszahlungsart wirklich löschen?',
+        'iss_delete_widget_warning': 'Möchten Sie dieses Widget wirklich löschen?',
+        'donation_goals_stop_warning': 'Möchten Sie dieses Ziel wirklich stoppen?',
+        'media_preview_play_seconds': {
+            0: '{0} Sekunde',
+            1: '{0} Sekunden',
+        },
+        'polls_stop_warning': 'Möchten Sie diese Umfrage wirklich stoppen?',
+        'polls_remove_option': 'Option entfernen',
+        'polls_variant': 'Option {0}:',
+        'polls_variant_title': 'Titel der Option',
+        'donations_delete_warning': 'Möchten Sie diese Spende wirklich löschen?',
+        'alerts_test_message': 'Die Testbenachrichtigung wird in wenigen Sekunden angezeigt.',
+        'two_factor_hold_seconds': {
+            0: 'Sekunde',
+            1: 'Sekunden',
+        },
+        'connections_disconnect_warning': 'Möchten Sie dieses Konto wirklich abkoppeln?',
+        'reset_token_warning': 'Möchten Sie dieses Token wirklich zurücksetzen? Bitte beachten Sie, dass sich die Links zu allen Widgets verändern!',
+        'widget_link_removed': '(Link entfernt)',
+        'donation_goal_widget_goal_over': 'Das Ziel ist abgelaufen!',
+        'alerts_widget_months': {
+            0: '{0} Monat',
+            1: '{0} Monate',
+        },
+        'cookies_warning_text': 'Wenn Sie Ihren Besuch unserer Website fortsetzen, gehen wir von Ihrem Einverständnis damit aus, dass wir Cookies verwenden, um Ihnen ein besseres Erlebnis auf unserer Seite zu bieten.',
+        'cookies_warning_learn_more': 'Mehr erfahren',
+        'cookies_warning_hide': 'Hide',
+
+        'lastdonations_widget_merchandise_WARFACE_CASE': 'hat gerade eine Warface-Kiste gekauft!',
+        'lastdonations_widget_merchandise_WARFACE_CASE_multiple': {
+            0: 'hat gerade {0} Warface-Kiste gekauft!',
+            1: 'hat gerade {0} Warface-Kisten gekauft!',
+        },
+        'alerts_widget_merchandise_WARFACE_CASE': '{username} hat gerade eine Warface-Kiste gekauft!',
+        'alerts_widget_merchandise_WARFACE_CASE_multiple': {
+            0: '{username} hat gerade {0} Warface-Kiste gekauft!',
+            1: '{username} hat gerade {0} Warface-Kisten gekauft!',
+        },
+        'index_chart_subscribers': {
+            0: '{0} Abonnent',
+            1: '{0} Abonnenten',
+        },
+        'clipboard_copy_success': 'Inhalt wurde erfolgreich auf Klemmbrett kopiert!',
+        'clipboard_copy_error': 'Inhalt konnte nicht auf Klemmbrett kopiert werden. Bitte kopieren Sie den Text manuell.',
+        'show_embedding_link': 'Link zum Einbetten anzeigen',
+        'hide_embedding_link': 'Link zum Einbetten verbergen',
+        'lastdonations_widget_merchandise_REVELATION_CHEST': 'hat gerade eine Revelation-Truhe gekauft!',
+        'lastdonations_widget_merchandise_REVELATION_CHEST_multiple': {
+            0: 'hat gerade {0} Revelation-Truhe gekauft!',
+            1: 'hat gerade {0} Revelation-Truhen gekauft!',
+        },
+        'alerts_widget_merchandise_REVELATION_CHEST': '{username} hat gerade eine Revelation-Truhe gekauft!',
+        'alerts_widget_merchandise_REVELATION_CHEST_multiple': {
+            0: '{username} hat gerade {0} Revelation-Truhe gekauft!',
+            1: '{username} hat gerade {0} Revelation-Truhen gekauft!',
+        },
+
+        'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': 'hat gerade einen geschlossenen Testzugang für Conqueror‘s Blade gekauft!',
+        'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+            0: 'hat gerade {0} geschlossenen Testzugang für Conqueror‘s Blade gekauft!\'s Blade closed testing access!',
+            1: 'hat gerade {0} geschlossene Testzugänge für Conqueror‘s Blade gekauft!\'s Blade closed testing accesses!',
+        },
+        'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': '{username} hat gerade einen geschlossenen Testzugang für Conqueror‘s Blade gekauft!',
+        'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+            0: '{username} hat gerade {0} geschlossenen Testzugang für Conqueror‘s Blade gekauft!\'s Blade closed testing access!',
+            1: '{username} hat gerade {0} geschlossene Testzugänge für Conqueror‘s Blade gekauft!\'s Blade closed testing accesses!',
+        },
+
+        'lastdonations_widget_merchandise_PUBG_SKIN_SET': 'hat gerade ein limitiertes Gegenständeset für PUBG gekauft!',
+        'lastdonations_widget_merchandise_PUBG_SKIN_SET_multiple': {
+            0: 'hat gerade {0} limitiertes Gegenständeset für PUBG gekauft!',
+            1: 'hat gerade {0} limitierte Gegenständesets für PUBG gekauft!',
+        },
+        'alerts_widget_merchandise_PUBG_SKIN_SET': '{username} hat gerade ein limitiertes Gegenständeset für PUBG gekauft!',
+        'alerts_widget_merchandise_PUBG_SKIN_SET_multiple': {
+            0: '{username} hat gerade {0} limitiertes Gegenständeset für PUBG gekauft!',
+            1: '{username} hat gerade {0} limitierte Gegenständesets für PUBG gekauft!',
+        },
+
+        'lastdonations_widget_merchandise_PUBG_SKIN': 'hat gerade einen limitierten Gegenstand für PUBG gekauft!',
+        'lastdonations_widget_merchandise_PUBG_SKIN_multiple': {
+            0: 'hat gerade {0} limitierten Gegenstand für PUBG gekauft!',
+            1: 'hat gerade {0} limitierte Gegenstände für PUBG gekauft!',
+        },
+        'alerts_widget_merchandise_PUBG_SKIN': '{username} hat gerade einen limitierten Gegenstand für PUBG gekauft!',
+        'alerts_widget_merchandise_PUBG_SKIN_multiple': {
+            0: '{username} hat gerade {0} limitierten Gegenstand für PUBG gekauft!',
+            1: '{username} hat gerade {0} limitierte Gegenstände für PUBG gekauft!',
+        },
+		'last_events_gifted_by': '(geschenkt von {0})',
+		'clipboard_copy_error_short': 'Inhalt konnte nicht auf Klemmbrett kopiert werden.',
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST': 'hat gerade eine ArcheAge-Truhe gekauft!',
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST_multiple': {
+			0: 'hat gerade {0} ArcheAge-Truhe gekauft!',
+			1: 'hat gerade {0} ArcheAge-Truhen gekauft!',
+		},
+
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE': 'hat gerade eine Crossfire-Kiste gekauft!',
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: 'hat gerade {0} Crossfire-Kiste gekauft!',
+			1: 'hat gerade {0} Crossfire-Kisten gekauft!',
+		},
+		'alerts_widget_merchandise_CROSSFIRE_CASE': '{username} hat gerade eine Crossfire-Kiste gekauft!',
+		'alerts_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: '{username} hat gerade {0} Crossfire-Kiste gekauft!',
+			1: '{username} hat gerade {0} Crossfire-Kisten gekauft!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK': 'hat gerade ein Furious-Samurai-Paket für Conqueror‘s Blade gekauft!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK_multiple': {
+			0: 'hat gerade {0} Furious-Samurai-Paket für Conqueror‘s Blade gekauft!',
+			1: 'hat gerade {0} Furious-Samurai-Pakete für Conqueror‘s Blade gekauft!',
+		},
+
+		'lastdonations_widget_merchandise_rare_item': 'hat gerade {0} erhalten!',
+		'lastdonations_widget_twitch_bits': 'hat gerade {0} bejubelt!'
+    },
+	'es_ES': {
+		'out_of_invoice_tries': 'Se ha producido un error (código -1.1). Inténtalo de nuevo más tarde.',
+		'last_events_widget_days_ago': {
+			0: 'Hace {0} día',
+			1: 'Hace {0} días',
+		},
+		'last_events_widget_hours_ago': {
+			0: 'Hace {0} hora',
+			1: 'Hace {0} horas',
+		},
+		'last_events_widget_minutes_ago': {
+			0: 'Hace {0} minuto',
+			1: 'Hace {0} minutos',
+		},
+		'last_events_widget_seconds_ago': {
+			0: 'Hace {0} segundo',
+			1: 'Hace {0} segundos',
+		},
+		'donation_goal_widget_days_left': {
+			0: 'Queda {0} día',
+			1: 'Quedan {0} días',
+		},
+		'donation_goal_widget_hours_left': {
+			0: 'Queda {0} hora',
+			1: 'Quedan {0} horas',
+		},
+		'donation_goal_widget_minutes_left': {
+			0: 'Queda {0} minuto',
+			1: 'Quedan {0} minutos',
+		},
+		'donation_goal_widget_seconds_left': {
+			0: 'Queda {0} segundo',
+			1: 'Quedan {0} segundos',
+		},
+		'last_events_widget_via': 'a través de {0}',
+		'last_events_widget_for': 'por {0}',
+		'last_events_widget_months_in_a_row': {
+			0: '{0} mes seguido',
+			1: '{0} meses seguidos',
+		},
+		'last_events_gifted_by': '(donado por {0})',
+		'file_manager_error_exceeded_max_size': 'No se pueden cargar archivos de tamaño superior a {0} MB.',
+		'file_manager_error_forbidden_extension': 'Solo se admiten archivos JPG, JPEG, GIF, WEBM, PNG, MP3, WAV y OGG.',
+		'file_manager_delete_file_warning': '¿Seguro que quieres eliminar este archivo? Asegúrate de que no está en uso en ningún otro sitio.',
+		'anonymous': 'Anónimo',
+		'giveaway_cancel_warning': '¿Seguro que quieres cancelar este sorteo?',
+		'alert_variations_delete_warning': '¿Seguro que quieres eliminar esta variación?',
+		'alert_variations_clear_queue': '¿Seguro que quieres eliminar la cola de alertas de este tipo?',
+		'payouts_delete_warning': '¿Seguro que quieres eliminar este método de pago?',
+		'iss_delete_widget_warning': '¿Seguro que quieres eliminar este widget?',
+		'donation_goals_stop_warning': '¿Seguro que quieres cancelar este objetivo?',
+		'media_preview_play_seconds': {
+			0: '{0} segundo',
+			1: '{0} segundos',
+		},
+		'polls_stop_warning': '¿Seguro que quieres cancelar esta encuesta?',
+		'polls_remove_option': 'Eliminar opción',
+		'polls_variant': 'Opción {0}:',
+		'polls_variant_title': 'Texto de la opción',
+		'donations_delete_warning': '¿Seguro que quieres eliminar esta donación?',
+		'alerts_test_message': 'La alerta de prueba se mostrará dentro de unos segundos.',
+		'two_factor_hold_seconds': {
+			0: 'segundo',
+			1: 'segundos',
+		},
+		'connections_disconnect_warning': '¿Seguro que quieres desconectar esta cuenta?',
+		'reset_token_warning': '¿Seguro que quieres restablecer el token? Cambiarán todos los enlaces a los widgets.',
+		'widget_link_removed': '(Enlace eliminado)',
+		'donation_goal_widget_goal_over': '¡Objetivo alcanzado!',
+		'alerts_widget_months': {
+			0: '{0} mes',
+			1: '{0} meses',
+		},
+		'cookies_warning_text': 'El uso de nuestra web implica que contamos con tu permiso para instalar cookies que nos permitan ofrecerte una experiencia óptima.',
+		'cookies_warning_learn_more': 'Más información',
+		'cookies_warning_hide': 'Ocultar',
+
+		'lastdonations_widget_merchandise_WARFACE_CASE': 'acaba de comprar una funda de Warface.',
+		'lastdonations_widget_merchandise_WARFACE_CASE_multiple': {
+			0: 'acaba de comprar {0} funda de Warface.',
+			1: 'acaba de comprar {0} fundas de Warface.',
+		},
+		'alerts_widget_merchandise_WARFACE_CASE': '{username} acaba de comprar una funda de Warface.',
+		'alerts_widget_merchandise_WARFACE_CASE_multiple': {
+			0: '{username} acaba de comprar {0} funda de Warface.',
+			1: '{username} acaba de comprar {0} fundas de Warface.',
+		},
+		'index_chart_subscribers': {
+			0: '{0} suscriptor',
+			1: '{0} suscriptores',
+		},
+		'clipboard_copy_success': 'El contenido se ha copiado en el portapapeles.',
+		'clipboard_copy_error': 'No se ha podido copiar el contenido en el portapapeles. Cópialo manualmente.',
+		'clipboard_copy_error_short': 'No se ha podido copiar el contenido en el portapapeles.',
+		'show_embedding_link': 'Mostrar enlace de incrustación',
+		'hide_embedding_link': 'Ocultar enlace de incrustación',
+		'lastdonations_widget_merchandise_REVELATION_CHEST': 'acaba de comprar un cofre de revelación.',
+		'lastdonations_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: 'acaba de comprar {0} cofre de revelación.',
+			1: 'acaba de comprar {0} cofres de revelación.',
+		},
+		'alerts_widget_merchandise_REVELATION_CHEST': '{username} acaba de comprar un cofre de revelación.',
+		'alerts_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: '{username} acaba de comprar {0} cofre de revelación.',
+			1: '{username} acaba de comprar {0} cofres de revelación.',
+		},
+
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST': 'acaba de comprar un cofre de ArcheAge.',
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST_multiple': {
+			0: 'acaba de comprar {0} cofre de ArcheAge.',
+			1: 'acaba de comprar {0} cofres de ArcheAge.',
+		},
+
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE': 'acaba de comprar una funda de Crossfire.',
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: 'acaba de comprar {0} funda de Crossfire.',
+			1: 'acaba de comprar {0} fundas de Crossfire.',
+		},
+		'alerts_widget_merchandise_CROSSFIRE_CASE': '{username} acaba de comprar una funda de Crossfire.',
+		'alerts_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: '{username} acaba de comprar {0} funda de Crossfire.',
+			1: '{username} acaba de comprar {0} fundas de Crossfire.',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': 'acaba de comprar acceso a las pruebas cerradas de Conqueror\'s Blade.',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: 'acaba de comprar {0} acceso a las pruebas cerradas de Conqueror\'s Blade.',
+			1: 'acaba de comprar {0} accesos a las pruebas cerradas de Conqueror\'s Blade.',
+		},
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': '{username} acaba de comprar acceso a las pruebas cerradas de Conqueror\'s Blade.',
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: '{username} acaba de comprar {0} acceso a las pruebas cerradas de Conqueror\'s Blade.',
+			1: '{username} acaba de comprar {0} accesos a las pruebas cerradas de Conqueror\'s Blade.',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK': 'acaba de comprar el paquete de samurái furioso de Conqueror\'s Blade.',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK_multiple': {
+			0: 'acaba de comprar {0} paquete de samurái furioso de Conqueror\'s Blade.',
+			1: 'acaba de comprar {0} paquetes de samurái furioso de Conqueror\'s Blade.',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET': 'acaba de comprar el set de artículos de edición limitada de PUBG.',
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: 'acaba de comprar {0} set de artículos de edición limitada de PUBG.',
+			1: 'acaba de comprar {0} sets de artículos de edición limitada de PUBG.',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN_SET': '{username} acaba de comprar el set de artículos de edición limitada de PUBG.',
+		'alerts_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: '{username} acaba de comprar {0} set de artículos de edición limitada de PUBG.',
+			1: '{username} acaba de comprar {0} sets de artículos de edición limitada de PUBG.',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN': 'acaba de comprar un artículo de edición limitada de PUBG.',
+		'lastdonations_widget_merchandise_PUBG_SKIN_multiple': {
+			0: 'acaba de comprar {0} artículo de edición limitada de PUBG.',
+			1: 'acaba de comprar {0} artículos de edición limitada de PUBG.',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN': '{username} acaba de comprar un artículo de edición limitada de PUBG.',
+		'alerts_widget_merchandise_PUBG_SKIN_multiple': {
+			0: '{username} acaba de comprar {0} artículo de edición limitada de PUBG.',
+			1: '{username} acaba de comprar {0} artículos de edición limitada de PUBG.',
+		},
+
+		'lastdonations_widget_merchandise_rare_item': 'acaba de conseguir {0}.',
+		'lastdonations_widget_twitch_bits': 'acaba de vitorear por {0}.'
+	},
+	'pl_PL': {
+		'out_of_invoice_tries': 'Wystąpił błąd (kod -1.1). Spróbuj ponownie później.',
+		'last_events_widget_days_ago': {
+			0: '{0} dzień temu',
+			1: '{0} dni temu',
+			2: '{0} dni temu',
+		},
+		'last_events_widget_hours_ago': {
+			0: '{0} godzinę temu',
+			1: '{0} godziny temu',
+			2: '{0} godzin temu',
+		},
+		'last_events_widget_minutes_ago': {
+			0: '{0} minutę temu',
+			1: '{0} minuty temu',
+			2: '{0} minut temu',
+		},
+		'last_events_widget_seconds_ago': {
+			0: '{0} sekundę temu',
+			1: '{0} sekundy temu',
+			2: '{0} sekund temu',
+		},
+		'donation_goal_widget_days_left': {
+			0: 'Pozostał {0} dzień',
+			1: 'Pozostały {0} dni',
+			2: 'Pozostało {0} dni',
+		},
+		'donation_goal_widget_hours_left': {
+			0: 'Pozostała {0} godzina',
+			1: 'Pozostały {0} godziny',
+			2: 'Pozostało {0} godzin',
+		},
+		'donation_goal_widget_minutes_left': {
+			0: 'Pozostała {0} minuta',
+			1: 'Pozostały {0} minuty',
+			2: 'Pozostało {0} minut',
+		},
+		'donation_goal_widget_seconds_left': {
+			0: 'Pozostała {0} sekunda',
+			1: 'Pozostały {0} sekundy',
+			2: 'Pozostało {0} sekund',
+		},
+		'last_events_widget_via': 'przez: {0}',
+		'last_events_widget_for': 'dla: {0}',
+		'last_events_widget_months_in_a_row': {
+			0: '{0} miesiąc z rzędu',
+			1: '{0} miesiące z rzędu',
+			2: '{0} miesięcy z rzędu',
+		},
+		'last_events_gifted_by': '(prezent od: {0})',
+		'file_manager_error_exceeded_max_size': 'Rozmiar przesyłanego pliku nie powinien przekraczać {0} MB!',
+		'file_manager_error_forbidden_extension': 'Dozwolone są tylko pliki o rozszerzeniach JPG, JPEG, GIF, WEBM, PNG, MP3, WAV i OGG!',
+		'file_manager_delete_file_warning': 'Czy na pewno chcesz usunąć ten plik? Upewnij się, że plik nie jest nigdzie używany.',
+		'anonymous': 'Anonim',
+		'giveaway_cancel_warning': 'Czy na pewno chcesz odwołać tę rozdawkę?',
+		'alert_variations_delete_warning': 'Czy na pewno chcesz usunąć ten wariant?',
+		'alert_variations_clear_queue': 'Czy na pewno chcesz wyczyścić kolejkę alertów tego typu?',
+		'payouts_delete_warning': 'Czy na pewno chcesz usunąć tę metodę wypłaty?',
+		'iss_delete_widget_warning': 'Czy na pewno chcesz usunąć ten widget?',
+		'donation_goals_stop_warning': 'Czy na pewno chcesz zatrzymać ten cel?',
+		'media_preview_play_seconds': {
+			0: '{0} sekunda',
+			1: '{0} sekundy',
+			2: '{0} sekund',
+		},
+		'polls_stop_warning': 'Czy na pewno chcesz zakończyć tę ankietę?',
+		'polls_remove_option': 'Usuń opcję',
+		'polls_variant': 'Opcja {0}:',
+		'polls_variant_title': 'Nazwa opcji',
+		'donations_delete_warning': 'Czy na pewno chcesz usunąć tę donację?',
+		'alerts_test_message': 'Testowy alert pojawi się za kilka sekund.',
+		'two_factor_hold_seconds': {
+			0: 'sekunda',
+			1: 'sekundy',
+			2: 'sekund',
+		},
+		'connections_disconnect_warning': 'Czy na pewno chcesz odłączyć to konto?',
+		'reset_token_warning': 'Czy na pewno chcesz zresetować token? Uwaga: linki do wszystkich widgetów ulegną zmianie!',
+		'widget_link_removed': '(link usunięto)',
+		'donation_goal_widget_goal_over': 'Cel zakończony!',
+		'alerts_widget_months': {
+			0: '{0} miesiąc',
+			1: '{0} miesiące',
+			2: '{0} miesięcy',
+		},
+		'cookies_warning_text': 'Dalsze korzystanie z naszego serwisu oznacza zgodę na użycie przez nas plików cookie w celu zapewnienia jak największej wygody korzystania z serwisu.',
+		'cookies_warning_learn_more': 'Więcej informacji',
+		'cookies_warning_hide': 'Ukryj',
+
+		'lastdonations_widget_merchandise_WARFACE_CASE': 'właśnie kupił Warface Case!',
+		'lastdonations_widget_merchandise_WARFACE_CASE_multiple': {
+			0: 'właśnie kupił {0} Warface Case!',
+			1: 'właśnie kupił {0} Warface Case’y!',
+			2: 'właśnie kupił {0} Warface Case’ów!',
+		},
+		'alerts_widget_merchandise_WARFACE_CASE': '{username} właśnie kupił Warface Case!',
+		'alerts_widget_merchandise_WARFACE_CASE_multiple': {
+			0: '{username} właśnie kupił {0} Warface Case!',
+			1: '{username} właśnie kupił {0} Warface Case’y!',
+			2: '{username} właśnie kupił {0} Warface Case’ów!',
+		},
+		'index_chart_subscribers': {
+			0: '{0} subskrybujący',
+			1: '{0} subskrybujących',
+			2: '{0} subskrybujących',
+		},
+		'clipboard_copy_success': 'Skopiowano treść do schowka!',
+		'clipboard_copy_error': 'Nie udało się skopiować treści do schowka. Skopiuj tekst ręcznie.',
+		'clipboard_copy_error_short': 'Nie udało się skopiować treści do schowka',
+		'show_embedding_link': 'Pokaż link do osadzenia',
+		'hide_embedding_link': 'Ukryj link do osadzenia',
+		'lastdonations_widget_merchandise_REVELATION_CHEST': 'właśnie kupił Revelation Chest!',
+		'lastdonations_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: 'właśnie kupił {0} Revelation Chest!',
+			1: 'właśnie kupił {0} Revelation Chesty!',
+			2: 'właśnie kupił {0} Revelation Chestów!',
+		},
+		'alerts_widget_merchandise_REVELATION_CHEST': '{username} właśnie kupił Revelation Chest!',
+		'alerts_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: '{username} właśnie kupił {0} Revelation Chest!',
+			1: '{username} właśnie kupił {0} Revelation Chesty!',
+			2: '{username} właśnie kupił {0} Revelation Chestów!',
+		},
+
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST': 'właśnie kupił ArchAge Chest!',
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST_multiple': {
+			0: 'właśnie kupił {0} ArchAge Chest!',
+			1: 'właśnie kupił {0} ArchAge Chesty!',
+			2: 'właśnie kupił {0} ArchAge Chestów!',
+		},
+
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE': 'właśnie kupił Crossfire Case!',
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: 'właśnie kupił {0} Crossfire Case!',
+			1: 'właśnie kupił {0} Crossfire Case’y!',
+			2: 'właśnie kupił {0} Crossfire Case’ów!',
+		},
+		'alerts_widget_merchandise_CROSSFIRE_CASE': '{username} właśnie kupił Crossfire Case!',
+		'alerts_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: '{username} właśnie kupił {0} Crossfire Case!',
+			1: '{username} właśnie kupił {0} Crossfire Case’y!',
+			2: '{username} właśnie kupił {0} Crossfire Case’ów!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': 'właśnie kupił dostęp do zamkniętych testów Conqueror’s Blade!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: 'właśnie kupił {0} dostęp do zamkniętych testów Conqueror’s Blade!',
+			1: 'właśnie kupił {0} dostępy do zamkniętych testów Conqueror’s Blade!',
+			2: 'właśnie kupił {0} dostępów do zamkniętych testów Conqueror’s Blade!',
+		},
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': '{username} właśnie kupił dostęp do zamkniętych testów Conqueror’s Blade!',
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: '{username} właśnie kupił {0} dostęp do zamkniętych testów Conqueror’s Blade!',
+			1: '{username} właśnie kupił {0} dostępy do zamkniętych testów Conqueror’s Blade!',
+			2: '{username} właśnie kupił {0} dostępów do zamkniętych testów Conqueror’s Blade!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK': 'właśnie kupił Conqueror’s Blade Furious Samurai Pack!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK_multiple': {
+			0: 'właśnie kupił {0} Conqueror’s Blade Furious Samurai Pack!',
+			1: 'właśnie kupił {0} Conqueror’s Blade Furious Samurai Packi!',
+			2: 'właśnie kupił {0} Conqueror’s Blade Furious Samurai Packów!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET': 'właśnie kupił zestaw przedmiotów z edycji limitowanej PUBG!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: 'właśnie kupił {0} zestaw przedmiotów z edycji limitowanej PUBG!',
+			1: 'właśnie kupił {0} zestawy przedmiotów z edycji limitowanej PUBG!',
+			2: 'właśnie kupił {0} zestawów przedmiotów z edycji limitowanej PUBG!',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN_SET': '{username} właśnie kupił zestaw przedmiotów z edycji limitowanej PUBG!',
+		'alerts_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: '{username} właśnie kupił {0} zestaw przedmiotów z edycji limitowanej PUBG!',
+			1: '{username} właśnie kupił {0} zestawy przedmiotów z edycji limitowanej PUBG!',
+			2: '{username} właśnie kupił {0} zestawów przedmiotów z edycji limitowanej PUBG!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN': 'właśnie kupił przedmiot z edycji limitowanej PUBG!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_multiple': {
+			0: 'właśnie kupił {0} przedmiot z edycji limitowanej PUBG!',
+			1: 'właśnie kupił {0} przedmioty z edycji limitowanej PUBG!',
+			2: 'właśnie kupił {0} przedmiotów z edycji limitowanej PUBG!',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN': '{username} właśnie kupił przedmiot z edycji limitowanej PUBG!',
+		'alerts_widget_merchandise_PUBG_SKIN_multiple': {
+			0: '{username} właśnie kupił {0} przedmiot z edycji limitowanej PUBG!',
+			1: '{username} właśnie kupił {0} przedmioty z edycji limitowanej PUBG!',
+			2: '{username} właśnie kupił {0} przedmiotów z edycji limitowanej PUBG!',
+		},
+
+		'lastdonations_widget_merchandise_rare_item': 'właśnie otrzymał {0}!',
+		'lastdonations_widget_twitch_bits': 'właśnie wysłał cheer za {0}!'
+	},
+	'sv_SE': {
+		'out_of_invoice_tries': 'Ett fel har uppstått (kod -1.1). Försök igen senare.',
+		'last_events_widget_days_ago': {
+			0: '{0} dag sedan',
+			1: '{0} dagar sedan',
+		},
+		'last_events_widget_hours_ago': {
+			0: '{0} timme sedan',
+			1: '{0} timmar sedan',
+		},
+		'last_events_widget_minutes_ago': {
+			0: '{0} minut sedan',
+			1: '{0} minuter sedan',
+		},
+		'last_events_widget_seconds_ago': {
+			0: '{0} sekund sedan',
+			1: '{0} sekunder sedan',
+		},
+		'donation_goal_widget_days_left': {
+			0: '{0} dag kvar',
+			1: '{0} dagar kvar',
+		},
+		'donation_goal_widget_hours_left': {
+			0: '{0} timme kvar',
+			1: '{0} timmar kvar',
+		},
+		'donation_goal_widget_minutes_left': {
+			0: '{0} minut kvar',
+			1: '{0} minuter kvar',
+		},
+		'donation_goal_widget_seconds_left': {
+			0: '{0} sekund kvar',
+			1: '{0} sekunder kvar',
+		},
+		'last_events_widget_via': 'via {0}',
+		'last_events_widget_for': 'för {0}',
+		'last_events_widget_months_in_a_row': {
+			0: '{0} månad i rad',
+			1: '{0} månader i rad',
+		},
+		'last_events_gifted_by': '(gåva från {0})',
+		'file_manager_error_exceeded_max_size': 'Den uppladdade filen får inte överstiga {0} MB!',
+		'file_manager_error_forbidden_extension': 'Endast filer i formatet JPG, JPEG, GIF, WEBM, PNG, MP3, WAV och OGG tillåts!',
+		'file_manager_delete_file_warning': 'Vill du verkligen ta bort filen? Se till att inte använda filen någonstans.',
+		'anonymous': 'Anonym',
+		'giveaway_cancel_warning': 'Vill du verkligen avbryta utlottningen?',
+		'alert_variations_delete_warning': 'Vill du verkligen ta bort variationen?',
+		'alert_variations_clear_queue': 'Vill du verkligen rensa notifikationskön av den här typen?',
+		'payouts_delete_warning': 'Vill du verkligen ta bort utbetalningsmetoden?',
+		'iss_delete_widget_warning': 'Vill du verkligen ta bort widgeten?',
+		'donation_goals_stop_warning': 'Vill du verkligen stoppa målet?',
+		'media_preview_play_seconds': {
+			0: '{0} sekund',
+			1: '{0} sekunder',
+		},
+		'polls_stop_warning': 'Vill du verkligen ta bort omröstningen?',
+		'polls_remove_option': 'Ta bort alternativ',
+		'polls_variant': 'Alternativ {0}:',
+		'polls_variant_title': 'Alternativnamn',
+		'donations_delete_warning': 'Vill du verkligen ta bort donationen?',
+		'alerts_test_message': 'Testnotifikationen visas om några sekunder.',
+		'two_factor_hold_seconds': {
+			0: 'sekund',
+			1: 'sekunder',
+		},
+		'connections_disconnect_warning': 'Vill du verkligen koppla bort det här kontot?',
+		'reset_token_warning': 'Vill du verkligen återställa beviset? Tänk på att länkarna till alla widgetar kommer att ändras!',
+		'widget_link_removed': '(länk borttagen)',
+		'donation_goal_widget_goal_over': 'Målet är nått!',
+		'alerts_widget_months': {
+			0: '{0} månad',
+			1: '{0} månader',
+		},
+		'cookies_warning_text': 'Genom att fortsätta ditt besök på vår webbplats godkänner du att vi använder cookies för att garantera bästa uppmöjliga upplevelse på webbplatsen.',
+		'cookies_warning_learn_more': 'Läs mer',
+		'cookies_warning_hide': 'Dölj',
+
+		'lastdonations_widget_merchandise_WARFACE_CASE': 'har just köpt Warface Case!',
+		'lastdonations_widget_merchandise_WARFACE_CASE_multiple': {
+			0: 'har just köpt {0} Warface Case!',
+			1: 'har just köpt {0} Warface Cases!',
+		},
+		'alerts_widget_merchandise_WARFACE_CASE': '{username} har just köpt Warface Case!',
+		'alerts_widget_merchandise_WARFACE_CASE_multiple': {
+			0: '{username} har just köpt {0} Warface Case!',
+			1: '{username} har just köpt {0} Warface Cases!',
+		},
+		'index_chart_subscribers': {
+			0: '{0} prenumerant',
+			1: '{0} prenumeranter',
+		},
+		'clipboard_copy_success': 'Innehållet har kopierats till dina urklipp!',
+		'clipboard_copy_error': 'Kunde inte kopiera innehåll till urklipp. Kopiera texten manuellt.',
+		'clipboard_copy_error_short': 'Kunde inte kopiera innehåll till urklipp',
+		'show_embedding_link': 'Visa länk för inbäddning',
+		'hide_embedding_link': 'Dölj länk för inbäddning',
+		'lastdonations_widget_merchandise_REVELATION_CHEST': 'köpte precis Revelation Chest!',
+		'lastdonations_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: 'köpte precis {0} Revelation Chest!',
+			1: 'köpte precis {0} Revelation Chests!',
+		},
+		'alerts_widget_merchandise_REVELATION_CHEST': '{username} köpte precis Revelation Chest!',
+		'alerts_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: '{username} köpte precis {0} Revelation Chest!',
+			1: '{username} köpte precis {0} Revelation Chests!',
+		},
+
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST': 'köpte precis ArcheAge Chest!',
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST_multiple': {
+			0: 'köpte precis {0} ArcheAge Chest!',
+			1: 'köpte precis {0} ArcheAge Chests!',
+		},
+
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE': 'köpte precis Crossfire Case!',
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: 'köpte precis {0} Crossfire Case!',
+			1: 'köpte precis {0} Crossfire Cases!',
+		},
+		'alerts_widget_merchandise_CROSSFIRE_CASE': '{username} köpte precis Crossfire Case!',
+		'alerts_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: '{username} köpte precis {0} Crossfire Case!',
+			1: '{username} köpte precis {0} Crossfire Cases!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': 'köpte precis stängd testning av Conqueror\'s Blade!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: 'köpte precis {0} stängd testning av Conqueror\'s Blade!',
+			1: 'köpte precis {0} stängda testningar av Conqueror\'s Blade!',
+		},
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': '{username} köpte precis stängd testning av Conqueror\'s Blade!',
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: '{username} köpte precis {0} stängd testning av Conqueror\'s Blade!',
+			1: '{username} köpte precis {0} stängda testningar av Conqueror\'s Blade!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK': 'köpte precis Conqueror\'s Blade Furious Samurai Pack!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK_multiple': {
+			0: 'köpte precis {0} Conqueror\'s Blade Furious Samurai Pack!',
+			1: 'köpte precis {0} Conqueror\'s Blade Furious Samurai Packs!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET': 'köpte precis ett begränsat PUBG-föremålsset!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: 'köpte precis {0} begränsat PUBG-föremålsset!',
+			1: 'köpte precis {0} begränsade PUBG-föremålsset!',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN_SET': '{username} köpte precis ett begränsat PUBG-föremålsset!',
+		'alerts_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: '{username} köpte precis {0} begränsat PUBG-föremålsset!',
+			1: '{username} köpte precis {0} begränsade PUBG-föremålsset!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN': 'köpte precis ett begränsat PUBG-föremål!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_multiple': {
+			0: 'köpte precis {0} begränsat PUBG-föremål!',
+			1: 'köpte precis {0} begränsade PUBG-föremål!',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN': '{username} köpte precis ett begränsat PUBG-föremål!',
+		'alerts_widget_merchandise_PUBG_SKIN_multiple': {
+			0: '{username} köpte precis {0} begränsat PUBG-föremål!',
+			1: '{username} köpte precis {0} begränsade PUBG-föremål!',
+		},
+
+		'lastdonations_widget_merchandise_rare_item': 'fick precis {0}!',
+		'lastdonations_widget_twitch_bits': 'cheerade precis för {0}!'
+	},
+	'it_IT': {
+		'out_of_invoice_tries': 'Si è verificato un errore (codice -1.1). Riprova più tardi.',
+		'last_events_widget_days_ago': {
+			0: '{0} giorno fa',
+			1: '{0} giorni fa',
+		},
+		'last_events_widget_hours_ago': {
+			0: '{0} ora fa',
+			1: '{0} ore fa',
+		},
+		'last_events_widget_minutes_ago': {
+			0: '{0} minuto fa',
+			1: '{0} minuti fa',
+		},
+		'last_events_widget_seconds_ago': {
+			0: '{0} secondo fa',
+			1: '{0} secondi fa',
+		},
+		'donation_goal_widget_days_left': {
+			0: '{0} giorno rimanente',
+			1: '{0} giorni rimanenti',
+		},
+		'donation_goal_widget_hours_left': {
+			0: '{0} ora rimanente',
+			1: '{0} ore rimanenti',
+		},
+		'donation_goal_widget_minutes_left': {
+			0: '{0} minuto rimanente',
+			1: '{0} minuti rimanenti',
+		},
+		'donation_goal_widget_seconds_left': {
+			0: '{0} secondo rimanente',
+			1: '{0} secondi rimanenti',
+		},
+		'last_events_widget_via': 'tramite {0}',
+		'last_events_widget_for': 'per {0}',
+		'last_events_widget_months_in_a_row': {
+			0: '{0} mese di seguito',
+			1: '{0} mesi di seguito',
+		},
+		'last_events_gifted_by': '(donato da {0})',
+		'file_manager_error_exceeded_max_size': 'La dimensione del file da caricare non deve superare {0} MB.',
+		'file_manager_error_forbidden_extension': 'Sono consentiti solo file con estensione JPG, JPEG, GIF, WEBM, PNG, MP3, WAV e OGG.',
+		'file_manager_delete_file_warning': 'Vuoi eliminare questo file? Assicurati che il file non sia in uso altrove.',
+		'anonymous': 'Anonimo',
+		'giveaway_cancel_warning': 'Vuoi annullare questo giveaway?',
+		'alert_variations_delete_warning': 'Vuoi eliminare questa variazione?',
+		'alert_variations_clear_queue': 'Vuoi cancellare la coda di avvisi di questo tipo?',
+		'payouts_delete_warning': 'Vuoi eliminare questo metodo di pagamento?',
+		'iss_delete_widget_warning': 'Vuoi eliminare questo widget?',
+		'donation_goals_stop_warning': 'Vuoi interrompere questo obiettivo?',
+		'media_preview_play_seconds': {
+			0: '{0} secondo',
+			1: '{0} secondi',
+		},
+		'polls_stop_warning': 'Vuoi interrompere questo sondaggio?',
+		'polls_remove_option': 'Rimuovi opzione',
+		'polls_variant': 'Opzione {0}:',
+		'polls_variant_title': 'Titolo opzione',
+		'donations_delete_warning': 'Vuoi eliminare questa donazione?',
+		'alerts_test_message': 'Il test di avviso sarà visualizzato tra qualche secondo.',
+		'two_factor_hold_seconds': {
+			0: 'secondo',
+			1: 'secondi',
+		},
+		'connections_disconnect_warning': 'Vuoi disconnettere questo account?',
+		'reset_token_warning': 'Vuoi reimpostare il token? Nota: i link a tutti i widget cambieranno.',
+		'widget_link_removed': '(link rimosso)',
+		'donation_goal_widget_goal_over': 'Obiettivo raggiunto!',
+		'alerts_widget_months': {
+			0: '{0} mese',
+			1: '{0} mesi',
+		},
+		'cookies_warning_text': 'Continuando a visitare il nostro sito web, confermerai l’autorizzazione alla distribuzione di cookie per garantire una migliore esperienza del sito.',
+		'cookies_warning_learn_more': 'Ulteriori informazioni',
+		'cookies_warning_hide': 'Nascondi',
+
+		'lastdonations_widget_merchandise_WARFACE_CASE': 'ha appena acquistato Warface Case!',
+		'lastdonations_widget_merchandise_WARFACE_CASE_multiple': {
+			0: 'ha appena acquistato {0} Warface Case!',
+			1: 'ha appena acquistato {0} Warface Case!',
+		},
+		'alerts_widget_merchandise_WARFACE_CASE': '{username} ha appena acquistato Warface Case!',
+		'alerts_widget_merchandise_WARFACE_CASE_multiple': {
+			0: '{username} ha appena acquistato {0} Warface Case!',
+			1: '{username} ha appena acquistato {0} Warface Case!',
+		},
+		'index_chart_subscribers': {
+			0: '{0} sottoscrittore',
+			1: '{0} sottoscrittori',
+		},
+		'clipboard_copy_success': 'Il contenuto è stato correttamente copiato negli Appunti.',
+		'clipboard_copy_error': 'Impossibile copiare il contenuto negli Appunti. Copia il testo manualmente.',
+		'clipboard_copy_error_short': 'Impossibile copiare il contenuto negli Appunti',
+		'show_embedding_link': 'Mostra link per incorporamento',
+		'hide_embedding_link': 'Nascondi link per incorporamento',
+		'lastdonations_widget_merchandise_REVELATION_CHEST': 'ha appena acquistato Revelation Chest!',
+		'lastdonations_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: 'ha appena acquistato {0} Revelation Chest!',
+			1: 'ha appena acquistato {0} Revelation Chest!',
+		},
+		'alerts_widget_merchandise_REVELATION_CHEST': '{username} ha appena acquistato Revelation Chest!',
+		'alerts_widget_merchandise_REVELATION_CHEST_multiple': {
+			0: '{username} ha appena acquistato {0} Revelation Chest!',
+			1: '{username} ha appena acquistato {0} Revelation Chest!',
+		},
+
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST': 'ha appena acquistato ArcheAge Chest!',
+		'lastdonations_widget_merchandise_ARCHEAGE_CHEST_multiple': {
+			0: 'ha appena acquistato {0} ArcheAge Chest!',
+			1: 'ha appena acquistato {0} ArcheAge Chest!',
+		},
+
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE': 'ha appena acquistato Crossfire Case!',
+		'lastdonations_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: 'ha appena acquistato {0} Crossfire Case!',
+			1: 'ha appena acquistato {0} Crossfire Case!',
+		},
+		'alerts_widget_merchandise_CROSSFIRE_CASE': '{username} ha appena acquistato Crossfire Case!',
+		'alerts_widget_merchandise_CROSSFIRE_CASE_multiple': {
+			0: '{username} ha appena acquistato {0} Crossfire Case!',
+			1: '{username} ha appena acquistato {0} Crossfire Case!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': 'ha appena acquistato l’accesso al Closed Beta Testing di Conqueror\'s Blade!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: 'ha appena acquistato {0} accesso al Closed Beta Testing di Conqueror\'s Blade!',
+			1: 'ha appena acquistato {0} accessi al Closed Beta Testing di Conqueror\'s Blade!',
+		},
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS': '{username} ha appena acquistato l’accesso al Closed Beta Testing di Conqueror\'s Blade!',
+		'alerts_widget_merchandise_CONQUERORS_BLADE_BETA_ACCESS_multiple': {
+			0: '{username} ha appena acquistato {0} accesso al Closed Beta Testing di Conqueror\'s Blade!',
+			1: '{username} ha appena acquistato {0} accessi al Closed Beta Testing di Conqueror\'s Blade!',
+		},
+
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK': 'ha appena acquistato il Furious Samurai Pack di Conqueror\'s Blade!',
+		'lastdonations_widget_merchandise_CONQUERORS_BLADE_FURIOUS_SAMURAI_PACK_multiple': {
+			0: 'ha appena acquistato {0} Furious Samurai Pack di Conqueror\'s Blade!',
+			1: 'ha appena acquistato {0} Furious Samurai Pack di Conqueror\'s Blade!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET': 'ha appena acquistato un set di articoli PUBG Limited Edition!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: 'ha appena acquistato {0} set di articoli PUBG Limited Edition!',
+			1: 'ha appena acquistato {0} set di articoli PUBG Limited Edition!',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN_SET': '{username} ha appena acquistato un set di articoli PUBG Limited Edition!',
+		'alerts_widget_merchandise_PUBG_SKIN_SET_multiple': {
+			0: '{username} ha appena acquistato {0} set di articoli PUBG Limited Edition!',
+			1: '{username} ha appena acquistato {0} set di articoli PUBG Limited Edition!',
+		},
+
+		'lastdonations_widget_merchandise_PUBG_SKIN': 'ha appena acquistato un articolo PUBG Limited Edition!',
+		'lastdonations_widget_merchandise_PUBG_SKIN_multiple': {
+			0: 'ha appena acquistato {0} articolo PUBG Limited Edition!',
+			1: 'ha appena acquistato {0} articoli PUBG Limited Edition!',
+		},
+		'alerts_widget_merchandise_PUBG_SKIN': '{username} ha appena acquistato un articolo PUBG Limited Edition!',
+		'alerts_widget_merchandise_PUBG_SKIN_multiple': {
+			0: '{username} ha appena acquistato {0} articoli PUBG Limited Edition!',
+			1: '{username} ha appena acquistato {0} articoli PUBG Limited Edition!',
+		},
+
+		'lastdonations_widget_merchandise_rare_item': 'ha appena preso {0}!',
+		'lastdonations_widget_twitch_bits': 'ha appena donato bits per {0}!'
+	}
+};
+
+language_plural = {
+	'en_US': '(n != 1)',
+	'ru_RU': '(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)',
+	'fr_FR': '(n > 1)',
+	'pt_BR': '(n > 1)',
+	'de_DE': '(n != 1)',
+	'es_ES': '(n != 1)',
+	'sv_SE': '(n != 1)',
+	'it_IT': '(n != 1)',
+	'pl_PL': '(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)'
+};
+
+function translateString(string, language) {
+	var language = (typeof language === 'undefined') ? document_language : language;
+
+	if (typeof string !== 'undefined' && string !== null && typeof language !== 'undefined' && language !== null && language in language_strings && string in language_strings[language]) {
+		return language_strings[language][string];
+	}else if (typeof string !== 'undefined' && string !== null && typeof language_strings['en_US'][string] !== 'undefined'){
+		return language_strings['en_US'][string];
+	}else{
+		return string;
+	}
+}
+
+function translateStringPlural(string, n, language) {
+	var language = (typeof language === 'undefined') ? document_language : language;
+	var n = parseInt(n);
+
+	var plural_form = eval(language_plural[language]);
+
+	if (plural_form === true) {
+		plural_form = 1;
+	} else if (plural_form === false) {
+		plural_form = 0;
+	}
+
+	if (typeof string !== 'undefined' && string !== null && typeof language !== 'undefined' && language !== null && language in language_strings && string in language_strings[language] && plural_form in language_strings[language][string]) {
+		return language_strings[language][string][plural_form];
+	}else{
+		return translateStringPlural(string, n, 'en_US');
+	}
+}

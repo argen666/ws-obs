@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WSS-OBS</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,cyrillic-ext,cyrillic,latin-ext'
+          rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="/js/jquery.min.js?v=534"></script>
+    <script type="text/javascript" src="/js/jquery.lettering-0.6.1.min.js?v=534"></script>
+    <script type="text/javascript" src="/js/jquery.browser.min.js?v=534"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js?v=534"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+
+<div class="wrapper ">
+    <script type="text/javascript" src="/js/socket.io-4.2.0.js?v=534"></script>
+    <script type="text/javascript">
+        function debug(text) {
+            $('#debug').append('<div>' + text + '</div>');
+        }
+        da_debug = false;
+    </script>
+
+    <div id="debug" style="color:white; background:rgba(0, 0, 0, 0.9); position:absolute; z-index:99999;"></div>
+    <div class="message-box">
+        <div class="user-detail">
+            <div class="user-detail_avatar">
+                <i class="">account_circle</i>
+            </div>
+
+            <div class="details">
+        <span class="user-detail_username">
+        Administrator
+        </span>
+
+                <div class="user-detail_text">
+                    Adminstrator654646464659879874987
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var message_queue = [];
+        var timer;
+        $('.message-box').hide()
+
+        function isInIframe() {
+            return false;
+        }
+
+        function initWsConnection() {
+            if (!isInIframe()) {
+                socket = io.connect();
+                /*socket = io('http://127.0.0.1/ws/' + '?url={stream_url}', {
+                 reconnection: true,
+                 reconnectionDelayMax: 5000,
+                 reconnectionDelay: 1000,
+                 transports: ["websockets"],
+                 path: '/'
+                 });*/
+            } else {
+                socket = null;
+            }
+        }
+
+        initWsConnection();
+
+        if (socket !== null) {
+            socket.on('connect', function (msg) {
+                console.log('WS: connected');
+                socket.emit('ws_connect', {stream_url: '{stream_url}'});
+                //socket.emit('add-user', {token: token, type: 'alert_widget'});
+                if (da_debug) debug('Connected to WS server');
+            });
+
+            socket.on('connect_error', function (msg) {
+                console.log('WS: connection_error');
+                if (da_debug) debug('Could not connect to WS server');
+            });
+
+            socket.on('connect_timeout', function (msg) {
+                console.log('WS: connection_timeout');
+                if (da_debug) debug('Connection to WS server is timed out');
+            });
+
+            socket.on('reconnect', function (msg) {
+                console.log('WS: reconnected');
+                if (da_debug) debug('Reconnected to WS server');
+            });
+
+            socket.on('disconnect', function () {
+                console.log('WS: disconnected');
+                socket.emit('ws_disconnect', {data: 'I\'m connected!'});
+                //$('#log').append('<br>Disconnected');
+            });
+
+            socket.on('alert_reload', function (msg) {
+                alert_data = $.parseJSON(msg);
+                console.log(alert_data);
+                location.reload();
+            });
+
+            socket.on('message', function (msg) {
+                if (da_debug) debug(msg['author']['name'] + ": " + msg['message']);
+                console.log(msg);
+                try {
+                    if (timer !== null) {
+                        clearInterval(timer)
+                    }
+                    showMessage(msg)
+                } catch (err) {
+                }
+            });
+
+            socket.on('alert_show', function (msg) {
+                //todo show moderated alert
+            });
+        }
+
+        function showMessage(msg) {
+            timer = setInterval(function () {
+                $('.message-box').hide();
+                timer = null;
+            }, 15000);
+            //avatar
+            $('.user-detail_avatar').empty()
+            var avatar = createAvatarHtml(msg)
+            avatar.appendTo($('.user-detail_avatar'));
+
+            //username
+            $('.user-detail_username').text(msg.author.name)
+
+            //message
+            $('.user-detail_text').empty()
+            var user_text_elements = createUserTextHtml(msg);
+            $.each(user_text_elements, function (index, element) {
+                element.appendTo($('.user-detail_text'));
+            });
+
+            $('.message-box').show();
+        }
+
+        function createAvatarHtml(msg) {
+            var img = $('<img />', {
+                id: 'author-avatar',
+                src: msg.author.imageUrl,
+            });
+            return img
+        }
+
+        function createUserTextHtml(msg) {
+            var html = [];
+            $.each(msg.messageEx, function (index, value) {
+                if (typeof value === 'string') {
+                    var span = $('<span />').attr('className', 'user-detail_text_part_' + index).html(value);
+                    html.push(span)
+                } else if (typeof value === "object" && value !== null) {
+                    var img = $('<img />', {
+                        id: 'user-detail_text_part_' + index,
+                        src: value.url
+                    });
+                    html.push(img)
+                } else {
+                    console.error("Unknown message type")
+                }
+            });
+            return html;
+        }
+    </script>
+
+</div>
+
+</body>
+</html>
+<style>
+    html {
+        overflow: hidden;
+    }
+
+    .message-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .user-detail {
+        /*border: blue solid 2px;*/
+        display: flex;
+        /*background: #CCCCCC;*/
+        align-items: flex-start;
+        /*justify-content: center;*/
+        align-self: flex-end;
+        margin-bottom: 5%;
+		height: 118px;
+		justify-content: flex-start;
+		background-image: url('img/bg.png');
+        width: 100%;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+
+    .user-detail > div {
+        /*border: green solid 2px;*/
+    }
+
+    .user-detail .details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+		height: 100%;
+		width: 500px;
+    }
+
+    .user-detail .details > span {
+        display: block;
+        width: 500px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		color: #e49b99;
+		margin-top: 3%;
+    }
+
+	.user-detail .details .user-detail_text {
+        margin-top: 2%;
+		width: 1300px;
+    }
+	
+    .user-detail .details .user-detail_text> img {
+        max-width: 16px;
+        max-height: 16px;
+    }
+	
+	.user-detail .details .user-detail_text> span {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+		font-family: 'Roboto', sans-serif;
+		font-size: 22px;
+		color: #ffffff;
+    }
+
+    .user-detail .user-detail_avatar {
+        display: flex;
+        align-items: flex-start;
+		padding-left: 5.4%;
+    }
+
+    .user-detail .user-detail_avatar #author-avatar {
+        float: left;
+        position: relative;
+        max-width: 64px;
+        max-height: 64px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+</style>
+
+

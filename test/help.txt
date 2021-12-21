@@ -1,0 +1,7 @@
+https://github.com/upgradeQ/OBS-Studio-Python-Scripting-Cheatsheet-obspython-Examples-of-API#ui
+https://github.com/upgradeQ/OBS-Studio-Python-Scripting-Cheatsheet-obspython-Examples-of-API/blob/master/src/export.md
+https://github.com/MarioMey/obs-osc-pythonscript/blob/41bb76f4d8e1fa72e41645e0489819e00a9e6a21/obs_api.py
+https://habr.com/ru/post/520684/
+https://habr.com/ru/post/522278/
+https://github.com/obsproject/obs-studio/blob/1f504c6ba452060b90e462d3939301e02d973391/UI/window-basic-properties.cpp
+https://github.com/obsproject/obs-studio/blob/dde4d57d726ed6d9e244ffbac093d8ef54e29f44/UI/importers/classic.cpp

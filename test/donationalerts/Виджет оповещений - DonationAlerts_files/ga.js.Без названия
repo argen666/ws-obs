@@ -1,0 +1,127 @@
+(function ($) {
+    $.each(['show', 'toggleClass', 'addClass', 'removeClass'], function (i, ev) {
+        var el = $.fn[ev];
+        $.fn[ev] = function () {
+
+            var oldDisplay = $(this).css('display');
+            el.apply(this, arguments);
+            var newDisplay = $(this).css('display');
+            if (oldDisplay == 'none' && newDisplay != oldDisplay) {
+                this.trigger('show');
+            }
+
+            return this;
+        };
+    });
+})(jQuery);
+ 
+(function($) {
+    $.fn.observe = function(cb, e) {
+        e = e || { subtree:true, childList:true, characterData:true };
+        var that = this
+        $(this).each(function() {
+            function callback(changes) { cb.call(node, changes, this); that.trigger('observe'); }
+            var node = this;
+            (new MutationObserver(callback)).observe(node, e);
+        });
+    };
+})(jQuery);
+
+(function ($) {
+
+    function getEvents(node) {
+        var attrs = {};
+        $.each(node.attributes, function (index, attribute) {
+            if (attribute.name.indexOf('v-da-ga') != 0) {
+                return;
+            }
+
+            $.each(attribute.name.substring(8).split('.'), function (index, event) {
+                var data = eval('(' + attribute.value + ')');
+                attrs[event] = {
+                    send: function(modifier) {
+                        var gaParams = { hitType: 'event' }
+                        for (var key in data) {
+                            if (data.hasOwnProperty(key)) {
+                                gaParams['event' + key] = data[key]
+                            }
+                        }
+
+                        if (typeof ga === "function") {
+                            ga('send', gaParams);
+                        } else {
+                            var messages = []
+                            for (var key in data) {
+                                if (data.hasOwnProperty(key)) {
+                                    messages.push('event' + key + ': ' + data[key])
+                                }
+                            }
+                            console.warn('Произошло событие (' + messages.join(', ') + '), но оно не отправлено т.к. GA не подключен к сайту. Сработал модификатор: ' + modifier)
+                        }
+                    }
+                }
+            });
+        });
+        return attrs;
+    }
+
+    $.fn.daGa = function () {
+
+        $.each($(this), function(index, node) {
+            var
+                events = getEvents(node),
+                isLimit = +($(node).attr('v-da-ga-limit')) || 999999;
+
+            if ('load' in events) {
+                events.load.send('load');
+            }
+
+            if ('click' in events) {
+                var fn = limiter(function () {
+                    events.click.send('click');
+                }, isLimit)
+
+                $(node).off('click.ga').on('click.ga', fn);
+            }
+
+            if ('show' in events) {
+                var fn = limiter(function () {
+                    events.show.send('show');
+                }, isLimit)
+
+                $(node).off('show.ga').on('show.ga', fn);
+            }
+
+            if ('change' in events) {
+                var fn = limiter(function() {
+                    events.change.send('change');
+                }, isLimit)
+
+                $(node).off('change.ga').on('change.ga', fn);
+            }
+
+            // if ('change' in events) {
+            //     $(node).observe(function () {
+            //         events.change.send('change');
+            //     });
+            // }
+        });
+    };
+
+    function limiter(fn, limit) {
+        var
+            returnValue = null,
+            limit = limit,
+            count = 0;
+        
+        return function() {
+            if (count < limit) {
+                returnValue = fn.apply(this);
+                count++;
+            }
+        
+            return returnValue;
+        };
+    };
+
+}(jQuery));

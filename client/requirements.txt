@@ -1,0 +1,6 @@
+escpos==1.9
+gevent_socketio==0.3.6
+Pillow==8.4.0
+pytchat==0.5.5
+sanic==21.6.2
+StarTSPImage==0.2.6
