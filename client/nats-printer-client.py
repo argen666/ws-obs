@@ -47,6 +47,8 @@ async def main(nats_host):
         try:
             msg = await sub.next_msg()
             jsondata = json.loads(msg.data)
+            if not 'messageEx' in jsondata or len(jsondata['messageEx']) == 0:
+                continue
             # print(jsondata['author']['name'] + ": " + jsondata['message'])
             print(jsondata['messageEx'])
             printMessage(jsondata)
