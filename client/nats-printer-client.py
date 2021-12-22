@@ -52,8 +52,8 @@ async def main(nats_host):
             # print(jsondata['author']['name'] + ": " + jsondata['message'])
             print(jsondata['messageEx'])
             printMessage(jsondata)
-            await asyncio.sleep(3)
             await msg.ack()
+            await asyncio.sleep(3)
         except Exception as ex:
             print(ex)
             traceback.print_stack()
