@@ -46,13 +46,13 @@ async def main(nats_host):
     while True:
         try:
             msg = await sub.next_msg()
+            await msg.ack()
             jsondata = json.loads(msg.data)
             if not 'messageEx' in jsondata or len(jsondata['messageEx']) == 0:
                 continue
             # print(jsondata['author']['name'] + ": " + jsondata['message'])
             print(jsondata['messageEx'])
             printMessage(jsondata)
-            await msg.ack()
             await asyncio.sleep(3)
         except Exception as ex:
             print(ex)
