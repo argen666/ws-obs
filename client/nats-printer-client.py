@@ -191,6 +191,9 @@ def json2image(jsondata):
     try:
         images = []
         font = os.path.dirname(os.path.abspath(__file__)) + "/Roboto-Regular.ttf"
+        author_name = jsondata['author']['name'] + ":"
+        author_name_img = text2png(author_name, fontsize=25, fontfullpath=font)
+        images.append(author_name_img)
         message = jsondata['messageEx']
         for msg in message:
             # print(type(msg))
