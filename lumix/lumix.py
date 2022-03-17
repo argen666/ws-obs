@@ -37,36 +37,62 @@ class CameraThread(Thread):
                 log("Ping camera "+self.camera_ip + " is OK")
                 # cvlc rtsp://192.168.16.127/stream --sout=file/ts:camera_1_$(date +"%Y%m%d%H%M%S")_"$c".mp4 --stop-time=10 vlc://quit
                 stream_url = "rtsp://"+self.camera_ip+"/stream"
-                file_name_template = self.camera_name+"_" + \
-                    time.strftime("%Y%m%d-%H%M%S")+"_" + \
-                    str(counter)+".mp4"
-                cmd = "cvlc "+stream_url+" --rtsp-frame-buffer-size=500000 -q --sout=file/ts:"+file_name_template + \
-                    " --stop-time="+str(self.video_chunk_time)+" vlc://quit"
-                cmd = shlex.split(cmd)
-                # cmd = ["cvlc", stream_url, "--sout=file/ts:", file_name_template,
-                #                      "--stop-time", str(self.video_chunk_time), "vlc://quit"]
-                log(cmd)
-                try:
-                    log("Chunk "+file_name_template+" saving in progress...")
-                    proc = subprocess.run(cmd, timeout=self.video_chunk_time+5)
-                    log("Chunk "+file_name_template+" saved")
-                    if (os.stat(file_name_template).st_size == 0):
-                        log("ERROR! Chunk "+file_name_template+" is ZERO size. Please Reboot camera!!!")
-                        isPingNeeded = True
-                    else:
-                        isPingNeeded = False
-                    # sleep(self.ping_wait_time+500)
-                except (subprocess.TimeoutExpired):
-                    log("Capture for chunk "+file_name_template +
-                          " was stucked and terminated by timeout")
-                    isPingNeeded = True
+                #self.captureCVLC(stream_url, counter)
+                self.captureFFMPG(stream_url, counter)
                 counter = counter+self.video_chunk_time
             else:
                 log("Ping camera "+str(self.camera_ip) +
-                      " FAILS, waiting "+str(self.ping_wait_time) + " sec")
+                    " FAILS, waiting "+str(self.ping_wait_time) + " sec")
                 isPingNeeded = True
                 sleep(self.ping_wait_time)
 
+    def captureCVLC(self,stream_url,counter):
+        file_name_template = self.camera_name+"_" + \
+            time.strftime("%Y%m%d-%H%M%S")+"_" + \
+            str(counter)+".mp4"
+        cmd = "cvlc "+stream_url+" --rtsp-frame-buffer-size=500000 -q --sout=file/ts:"+file_name_template + \
+              " --stop-time="+str(self.video_chunk_time)+" vlc://quit"
+        cmd = shlex.split(cmd)
+        # cmd = ["cvlc", stream_url, "--sout=file/ts:", file_name_template,
+        #                      "--stop-time", str(self.video_chunk_time), "vlc://quit"]
+        log(cmd)
+        try:
+            log("Chunk "+file_name_template+" saving in progress...")
+            proc = subprocess.run(cmd, timeout=self.video_chunk_time+5)
+            log("Chunk "+file_name_template+" saved")
+            if (os.stat(file_name_template).st_size == 0):
+                log("ERROR! Chunk "+file_name_template +
+                    " is ZERO size. Please Reboot camera!!!")
+                isPingNeeded = True
+            else:
+                isPingNeeded = False
+                # sleep(self.ping_wait_time+500)
+        except (subprocess.TimeoutExpired):
+            log("Capture for chunk "+file_name_template +
+                " was stucked and terminated by timeout")
+            isPingNeeded = True
+        except:
+            pass
+
+    def captureFFMPG(self,stream_url,counter):
+        stream_url = "rtsp://@"+self.camera_ip+"/stream"
+        file_name_template = self.camera_name+"_" + \
+            time.strftime("%Y%m%d-%H%M%S")
+        cmd = "ffmpeg -hide_banner -loglevel error -i "+stream_url+" -acodec copy -vcodec copy -f segment -segment_time "+str(self.video_chunk_time)+" \"videos/"+file_name_template +"-%03d.ts\""
+        log(cmd)
+        cmd = shlex.split(cmd)
+        #log(cmd)
+        try:
+            log("Stream from "+self.camera_name+" saving in progress...")
+            proc = subprocess.run(cmd)
+            #log("Chunk "+file_name_template+" saved")
+        except (subprocess.TimeoutExpired):
+            log("Capture "+file_name_template +
+                " was stucked and terminated by timeout")
+            isPingNeeded = True
+        except:
+            log("FFMPG process was unexpexted ends, restarting...")
+            isPingNeeded = True       
 
 class GetDict:
 
@@ -100,8 +126,10 @@ class GetDict:
 
         return sections_dict
 
+
 def log(*text):
-    print(current_thread().name,text)
+    print(current_thread().name, text)
+
 
 def kill_process(name):
     for proc in psutil.process_iter():
@@ -112,6 +140,7 @@ def kill_process(name):
 def handler(signum, frame):
     log('Signal handler called with signal', signum)
     kill_process("vlc")
+    kill_process("ffmpeg")
     exit(signum)
 
 
