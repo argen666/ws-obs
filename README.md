@@ -5,11 +5,11 @@ nats-server.exe --js
 cd server \
 "C:\Python39\python.exe" nats-youtube.py {nats_server_url} {stream_url}" \
 ex.: \
-"C:\Python39\python.exe" nats-youtube.py localhost "https://www.youtube.com/watch?v=IgE-DV-"
+"C:\Python39\python.exe" nats-youtube.py localhost "https://www.youtube.com/watch?v=IgE-DV-" 
 3. Start the web subscriber \
 cd server \
-"C:\Python39\python.exe" nats-web-client.py \ 
-Navigate to: http://127.0.0.1/chat?url={nats_server_url}, ex: http://127.0.0.1/chat?url=localhost \
+"C:\Python39\python.exe" nats-web-client.py  
+Navigate to: http://127.0.0.1/chat?url={nats_server_url}, ex: http://127.0.0.1/chat?url=localhost 
 4. Start nats printer subscriber \
 *** Needs to be run in the Virtualbox environment *** \
 Prerequirements: 
