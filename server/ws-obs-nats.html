@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WSS-OBS</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,cyrillic-ext,cyrillic,latin-ext'
+          rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="/js/jquery.min.js?v=534"></script>
+    <script type="text/javascript" src="/js/jquery.lettering-0.6.1.min.js?v=534"></script>
+    <script type="text/javascript" src="/js/jquery.browser.min.js?v=534"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js?v=534"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+<div class="wrapper ">
+    <script type="text/javascript" src="/js/socket.io-4.2.0.js?v=534"></script>
+    <script type="text/javascript">
+            function debug(text) {
+                $('#debug').append('<div>' + text + '</div>');
+            }
+            da_debug = false;
+
+
+
+    </script>
+    <div id="debug" style="color:white; background:rgba(0, 0, 0, 0.9); position:absolute; z-index:99999;"></div>
+    <div class="message-box">
+        <div class="user-detail">
+            <div class="user-detail_avatar">
+                <i class="">account_circle</i>
+            </div>
+            <div class="details">
+                  <span class="user-detail_username">
+                  Administrator
+                  </span>
+                <div class="user-detail_text">
+                    Adminstrator654646464659879874987
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+    var timer;
+      import { connect,consumerOpts,JSONCodec } from '/js/nats.js'
+            //$('.message-box').hide()
+
+            function isInIframe() {
+                return false;
+            }
+
+            const initWsConnection = async function () {
+            let js
+            let nc
+              try {
+                if (!isInIframe()) {
+                     nc = await connect({ servers: ['ws://{nats_host}:9222'] });
+                     js = nc.jetstream();
+                } else {
+                    nc = null;
+                    js = null;
+                }
+
+			
+			 if (js !== null) {
+
+            const opts = consumerOpts();
+            const jc = JSONCodec();
+            opts.stream="youtube-stream";
+            opts.manualAck();
+            opts.ackExplicit();
+            opts.deliverLast();
+            opts.replayInstantly();
+            opts.deliverTo("web");
+
+            let sub = await js.subscribe("comments", opts);
+            const done = (async () => {
+            for await (const m of sub) {
+            m.ack();
+            let msg = jc.decode(m.data);
+            callback(m);
+            await sleep(10 * 1000);
+            }
+            })();
+
+                function callback(m) {
+                    let msg = jc.decode(m.data)
+                    if (da_debug) debug(msg['author']['name'] + ": " + msg['message']);
+                    //console.log(msg);
+                    try {
+                       // if (timer !== null) {
+                       if ( typeof(timer) !== "undefined" && timer !== null ) {
+                        //console.log(timer)
+                            clearInterval(timer)
+                            //return;
+                        }
+                        showMessage(msg)
+                    } catch (err) {
+                    console.log(err);
+                    }
+            }
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+  function showMessage(msg) {
+                timer = setInterval(function () {
+                    $('.message-box').hide();
+                    timer = null;
+                }, 15000);
+                //avatar
+                $('.user-detail_avatar').empty()
+                var avatar = createAvatarHtml(msg)
+                avatar.appendTo($('.user-detail_avatar'));
+
+                //username
+                $('.user-detail_username').text(msg.author.name)
+
+                //message
+                $('.user-detail_text').empty()
+                var user_text_elements = createUserTextHtml(msg);
+                $.each(user_text_elements, function (index, element) {
+                    element.appendTo($('.user-detail_text'));
+                });
+
+                $('.message-box').show();
+            }
+
+             function createAvatarHtml(msg) {
+                var img = $('<img />', {
+                    id: 'author-avatar',
+                    src: msg.author.imageUrl,
+                });
+                return img
+            }
+
+             function createUserTextHtml(msg) {
+                var html = [];
+                $.each(msg.messageEx, function (index, value) {
+                    if (typeof value === 'string') {
+                        var span = $('<span />').attr('className', 'user-detail_text_part_' + index).html(value);
+                        html.push(span)
+                    } else if (typeof value === "object" && value !== null) {
+                        var img = $('<img />', {
+                            id: 'user-detail_text_part_' + index,
+                            src: value.url
+                        });
+                        html.push(img)
+                    } else {
+                        console.error("Unknown message type")
+                    }
+                });
+                return html;
+            }
+			
+            }
+             } catch(err) {
+                console.error(err)
+            }}
+
+
+window.onbeforeunload = function() {
+    nc.close();
+};
+            initWsConnection();
+            //da_debug=true;
+
+           
+           
+
+
+
+    </script>
+</div>
+</body>
+</html>
+<style>
+   html {
+   overflow: hidden;
+   }
+   .message-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   }
+   .user-detail {
+   /*border: blue solid 2px;*/
+   display: flex;
+   /*background: #CCCCCC;*/
+   align-items: flex-start;
+   /*justify-content: center;*/
+   align-self: flex-end;
+   margin-bottom: 5%;
+   height: 118px;
+   justify-content: flex-start;
+   background-image: url('img/bg.png');
+   width: 100%;
+   background-repeat: no-repeat;
+   align-items: center;
+   }
+   .user-detail > div {
+   /*border: green solid 2px;*/
+   }
+   .user-detail .details {
+   display: flex;
+   flex-direction: column;
+   margin-left: 10px;
+   height: 100%;
+   width: 500px;
+   }
+   .user-detail .details > span {
+   display: block;
+   width: 500px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   color: #e49b99;
+   margin-top: 3%;
+   }
+   .user-detail .details .user-detail_text {
+   margin-top: 2%;
+   width: 1300px;
+   }
+   .user-detail .details .user-detail_text> img {
+   max-width: 16px;
+   max-height: 16px;
+   }
+   .user-detail .details .user-detail_text> span {
+   display: block;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   font-family: 'Roboto', sans-serif;
+   font-size: 22px;
+   color: #ffffff;
+   }
+   .user-detail .user-detail_avatar {
+   display: flex;
+   align-items: flex-start;
+   padding-left: 5.4%;
+   }
+   .user-detail .user-detail_avatar #author-avatar {
+   float: left;
+   position: relative;
+   max-width: 64px;
+   max-height: 64px;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
+   }
+
+
+</style>
