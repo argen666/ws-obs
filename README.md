@@ -1,6 +1,6 @@
 1. Start nats-server message broker \
 cd nats-server.exe \
-nats-server.exe --js
+nats-server.exe --js  -c nats.conf
 2. Start youtube comments publisher \
 cd server \
 "C:\Python39\python.exe" nats-youtube.py {nats_server_url} {stream_url}" \
