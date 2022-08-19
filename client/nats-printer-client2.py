@@ -48,7 +48,7 @@ async def main(nats_host):
             msg = await sub.next_msg()
             await msg.ack()
             jsondata = json.loads(msg.data)
-            print(jsondata)
+            # print(jsondata)
             if not 'messageExtended' in jsondata or len(jsondata['messageExtended']) == 0:
                 continue
             # print(jsondata['author']['name'] + ": " + jsondata['message'])
@@ -222,7 +222,7 @@ def json2image(jsondata):
         final_image = merge_images(images)
         return final_image
     except Exception as e:
-        traceback.print_stack()
+        # traceback.print_stack()
         print(type(e), str(e))
 
 
