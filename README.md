@@ -22,6 +22,6 @@ python3.9 nats-printer-client.py {nats_server_url} \
 ex.: \
 python3.9 nats-printer-client.py localhost
 
-====== UPDATE 2022 ========
-For web portal version:
+====== UPDATE 2022 ======== \
+For web portal version: \
 python3.9 nats-printer-client2.py localhost
