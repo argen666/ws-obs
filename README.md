@@ -23,5 +23,9 @@ ex.: \
 python3.9 nats-printer-client.py localhost
 
 ====== UPDATE 2022 ======== \
-For web portal version: \
+Web portal: \
+cd /root/fedora/omka \
+[root@fedora omka]# ./omka restart \
+
+Printer client for web portal version: \
 python3.9 nats-printer-client2.py localhost
