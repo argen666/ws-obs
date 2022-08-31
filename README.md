@@ -21,3 +21,11 @@ cd client \
 python3.9 nats-printer-client.py {nats_server_url} \
 ex.: \
 python3.9 nats-printer-client.py localhost
+
+====== UPDATE 2022 ======== \
+Web portal: \
+cd /root/fedora/omka \
+[root@fedora omka]# ./omka restart \
+
+Printer client for web portal version: \
+python3.9 nats-printer-client2.py localhost
