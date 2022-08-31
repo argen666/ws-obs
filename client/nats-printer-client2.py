@@ -36,6 +36,24 @@ async def test():
         await asyncio.sleep(3)
 
 
+def sendHeartbeat(host):
+    url = "http://" + host + ":80/api/printer"
+
+    payload = json.dumps({
+        "id": "1",
+        "name": "STAR TSP 100",
+        "model": "STAR TSP 100 III LAN",
+        "lastTimestamp": int(time.time())
+    })
+    headers = {
+        'Content-Type': 'application/json'
+    }
+
+    response = requests.request("POST", url, headers=headers, data=payload)
+
+    # print(response.text)
+
+
 async def main(nats_host):
     nc = await nats.connect(nats_host)
     print(nc)
@@ -43,6 +61,7 @@ async def main(nats_host):
     sub = await js.subscribe(stream="youtube-stream", subject="*.comments", durable="printer",
                              config=ConsumerConfig(replay_policy=ReplayPolicy.instant,
                                                    deliver_policy=DeliverPolicy.all))
+    sendHeartbeat(nats_host)
     while True:
         try:
             msg = await sub.next_msg()
@@ -54,10 +73,13 @@ async def main(nats_host):
             # print(jsondata['author']['name'] + ": " + jsondata['message'])
             print(jsondata['messageExtended'])
             printMessage(jsondata)
+            sendHeartbeat(nats_host)
             await asyncio.sleep(3)
         except Exception as ex:
-            print(ex)
-            traceback.print_stack()
+            # print(ex)
+            sendHeartbeat(nats_host)
+            await asyncio.sleep(3)
+            # traceback.print_stack()
 
 
 def text2png(text, color="#000", bgcolor="#FFF", fontfullpath=None, fontsize=13, leftpadding=3, rightpadding=3,
