@@ -1,6 +1,6 @@
 import asyncio
 import json
-import os, time
+import os, time, re
 import sys
 import textwrap
 import traceback
@@ -37,7 +37,8 @@ async def test():
 
 
 def sendHeartbeat(host):
-    url = "http://" + host + ":80/api/printer"
+    url = "http://" + host
+    url = re.sub(r':\d+', '', url)+ ":80/api/printer"
 
     payload = json.dumps({
         "id": "1",
@@ -58,9 +59,17 @@ async def main(nats_host):
     nc = await nats.connect(nats_host)
     print(nc)
     js = nc.jetstream()
-    sub = await js.subscribe(stream="youtube-stream", subject="*.comments", durable="printer",
-                             config=ConsumerConfig(replay_policy=ReplayPolicy.instant,
-                                                   deliver_policy=DeliverPolicy.all))
+    sub = None
+    while True:
+        try:
+            sub = await js.subscribe(stream="youtube-stream", subject="*.comments", durable="printer",
+                                     config=ConsumerConfig(replay_policy=ReplayPolicy.instant,
+                                                           deliver_policy=DeliverPolicy.all))
+            break
+        except Exception:
+            print("Waiting stream started...")
+            time.sleep(10)
+
     sendHeartbeat(nats_host)
     while True:
         try:
